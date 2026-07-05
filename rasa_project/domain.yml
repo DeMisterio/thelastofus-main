@@ -1,0 +1,32 @@
+version: '3.1'
+intents:
+- attack
+- cut
+- ignite
+- inspect
+- hook
+- shoot
+- unlock
+- drink
+- eat
+- store_items
+- warm
+- wear
+- sit
+- give
+- go
+- pickup
+- punch
+- signal
+- put
+- throw
+- open
+entities:
+- target
+- tool
+- destination
+- recipient
+- source
+responses:
+  utter_default:
+  - text: I can't understand any of that.

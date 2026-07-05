@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>My Text Adventure</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="module">
+        import { initializeGame } from './event_control/event_control.js';
+        
+        // Initialize game when page loads
+        window.addEventListener('DOMContentLoaded', async () => {
+            try {
+                await initializeGame();
+            } catch (error) {
+                console.error("Failed to initialize game:", error);
+            }
+        });
+    </script>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <div id='appContainer'>
+        <!-- Main Area -->
+        <div id='mainContent'>
+            <div id='output'></div>
+            <div id='inventoryPanel'>
+                <div class="panel-header">Inventory</div>
+                <div id='inventoryItems'></div>
+            </div>
+            <div id='cli' contenteditable="true" onkeyup="checkInput(event)"></div>
+        </div>
+
+        <!-- Sidebar Progress -->
+        <div id='progressSidebar'>
+            <div class="panel-header">Scenarios</div>
+            <div id='scenarioList'>
+                <!-- JS will inject scenes here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

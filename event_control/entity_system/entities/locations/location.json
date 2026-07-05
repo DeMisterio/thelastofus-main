@@ -1,0 +1,650 @@
+{
+  "locations": [
+    {
+      "id": "Init_house",
+      "name": "House",
+      "tokens": [
+        "house"
+      ],
+      "sub_locations": [
+        {
+          "name": "kitchen",
+          "items_id": "kitchen_set",
+          "tokens": [
+            "kitchen"
+          ],
+          "init_description": "I am now in the kitchen."
+        },
+        {
+          "name": "living_room",
+          "items_id": "living_room_set",
+          "tokens": [
+            "living",
+            "room"
+          ],
+          "init_description": "I am now in the living room."
+        },
+        {
+          "name": "bathroom",
+          "items_id": "bathroom_set",
+          "tokens": [
+            "bathroom"
+          ],
+          "init_description": "I am now in the bathroom."
+        },
+        {
+          "name": "hall",
+          "items_id": "hall_set",
+          "tokens": [
+            "hall"
+          ],
+          "init_description": "I am now in the hall."
+        },
+        {
+          "name": "balcony",
+          "items_id": "balcony_set",
+          "tokens": [
+            "balcony"
+          ],
+          "init_description": "I am now out on the balcony."
+        },
+        {
+          "name": "exit",
+          "items_id": null,
+          "tokens": [
+            "exit"
+          ],
+          "init_description": "I am now by the house exit."
+        }
+      ],
+      "characters": [
+        "Tom",
+        "Derick",
+        "Alex",
+        "Dominic",
+        "Me"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Bullets_street",
+      "name": "Bullets Street",
+      "tokens": [
+        "bullets",
+        "street"
+      ],
+      "sub_locations": [
+        {
+          "name": "flipped_taxi",
+          "items_id": "taxi_items",
+          "tokens": [
+            "flipped",
+            "taxi"
+          ],
+          "init_description": "I am now beside the flipped taxi."
+        },
+        {
+          "name": "bus_stop",
+          "items_id": "busstop_items",
+          "tokens": [
+            "bus",
+            "stop"
+          ],
+          "init_description": "I am now at the bus stop."
+        },
+        {
+          "name": "playground",
+          "items_id": "playground_items",
+          "tokens": [
+            "playground"
+          ],
+          "init_description": "I am now at the playground."
+        },
+        {
+          "name": "baby_swing",
+          "items_id": "swing_items",
+          "tokens": [
+            "baby",
+            "swing"
+          ],
+          "init_description": "I am now by the baby swing."
+        },
+        {
+          "name": "sand_playground",
+          "items_id": "sand_items",
+          "tokens": [
+            "sand",
+            "playground"
+          ],
+          "init_description": "I am now on the sandy playground."
+        },
+        {
+          "name": "corner_shop_entrance",
+          "items_id": "shop_entrance_items",
+          "tokens": [
+            "corner",
+            "shop",
+            "entrance"
+          ],
+          "init_description": "I am now at the corner shop entrance."
+        }
+      ],
+      "characters": [
+        "Sara"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Parking_Lot_Bullets",
+      "name": "Bullets Street Parking Lot",
+      "tokens": [
+        "bullets",
+        "street",
+        "parking",
+        "lot"
+      ],
+      "sub_locations": [
+        {
+          "name": "car",
+          "items_id": "car_items",
+          "tokens": [
+            "car"
+          ],
+          "init_description": "I am now inside the car."
+        },
+        {
+          "name": "parked_cars",
+          "items_id": "parkedcars_items",
+          "tokens": [
+            "parked",
+            "cars"
+          ],
+          "init_description": "I am now among the parked cars."
+        },
+        {
+          "name": "fence_area",
+          "items_id": "fence_items",
+          "tokens": [
+            "fence",
+            "area"
+          ],
+          "init_description": "I am now near the fence area."
+        }
+      ],
+      "characters": [
+        "Me",
+        "Tom",
+        "Alex",
+        "Derick",
+        "Dominic"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Industrial_Shop",
+      "name": "Industrial Shop",
+      "tokens": [
+        "industrial",
+        "shop"
+      ],
+      "sub_locations": [
+        {
+          "name": "main_floor",
+          "items_id": "mainfloor_items",
+          "tokens": [
+            "main",
+            "floor"
+          ],
+          "init_description": "I am now on the main floor of the shop."
+        },
+        {
+          "name": "shelf_rows",
+          "items_id": "shelf_items",
+          "tokens": [
+            "shelf",
+            "rows"
+          ],
+          "init_description": "I am now between the shelf rows."
+        },
+        {
+          "name": "back_storage",
+          "items_id": "storage_items",
+          "tokens": [
+            "back",
+            "storage"
+          ],
+          "init_description": "I am now in the back storage."
+        },
+        {
+          "name": "freezer_room",
+          "items_id": "freezer_items",
+          "tokens": [
+            "freezer",
+            "room"
+          ],
+          "init_description": "I am now in the freezer room."
+        },
+        {
+          "name": "back_exit",
+          "items_id": "backexit_items",
+          "tokens": [
+            "back",
+            "exit"
+          ],
+          "init_description": "I am now at the back exit."
+        }
+      ],
+      "characters": [
+        "Sara_Husband",
+        "Gang_Leader"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Elderly_House",
+      "name": "Elderly Couple House",
+      "tokens": [
+        "elderly",
+        "couple",
+        "house"
+      ],
+      "sub_locations": [
+        {
+          "name": "living_room",
+          "items_id": "elder_living_items",
+          "tokens": [
+            "living",
+            "room"
+          ],
+          "init_description": "I am now in the elderly couple's living room."
+        },
+        {
+          "name": "kitchen",
+          "items_id": "elder_kitchen_items",
+          "tokens": [
+            "kitchen"
+          ],
+          "init_description": "I am now in the elderly couple's kitchen."
+        },
+        {
+          "name": "bedroom",
+          "items_id": "elder_bedroom_items",
+          "tokens": [
+            "bedroom"
+          ],
+          "init_description": "I am now in the elderly bedroom."
+        },
+        {
+          "name": "bathroom",
+          "items_id": "elder_bathroom_items",
+          "tokens": [
+            "bathroom"
+          ],
+          "init_description": "I am now in the elderly bathroom."
+        }
+      ],
+      "characters": [
+        "Old_Man",
+        "Old_Woman"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Car_Moving",
+      "name": "Moving Car",
+      "tokens": [
+        "moving",
+        "car"
+      ],
+      "sub_locations": [
+        {
+          "name": "driver_seat",
+          "items_id": "driver_items",
+          "tokens": [
+            "driver",
+            "seat"
+          ],
+          "init_description": "I am now in the driver's seat."
+        },
+        {
+          "name": "passenger_seat",
+          "items_id": "passenger_items",
+          "tokens": [
+            "passenger",
+            "seat"
+          ],
+          "init_description": "I am now in the passenger seat."
+        },
+        {
+          "name": "back_seat",
+          "items_id": "backseat_items",
+          "tokens": [
+            "back",
+            "seat"
+          ],
+          "init_description": "I am now in the back seat."
+        },
+        {
+          "name": "dashboard",
+          "items_id": "dashboard_items",
+          "tokens": [
+            "dashboard"
+          ],
+          "init_description": "I am now leaning over the dashboard."
+        },
+        {
+          "name": "phone_interface",
+          "items_id": "phone_items",
+          "tokens": [
+            "phone",
+            "interface"
+          ],
+          "init_description": "I am now staring at the phone interface."
+        }
+      ],
+      "characters": [
+        "Me",
+        "Tom",
+        "Zack",
+        "Alex"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Open_Field",
+      "name": "Open Field",
+      "tokens": [
+        "open",
+        "field"
+      ],
+      "sub_locations": [
+        {
+          "name": "fire_area",
+          "items_id": "fire_items",
+          "tokens": [
+            "fire",
+            "area"
+          ],
+          "init_description": "I am now by the fire area."
+        },
+        {
+          "name": "water_zone",
+          "items_id": "water_items",
+          "tokens": [
+            "water",
+            "zone"
+          ],
+          "init_description": "I am now near the water zone."
+        },
+        {
+          "name": "car_side",
+          "items_id": "car_side_items",
+          "tokens": [
+            "car",
+            "side"
+          ],
+          "init_description": "I am now by the side of the car."
+        },
+        {
+          "name": "sleep_spot",
+          "items_id": "sleep_items",
+          "tokens": [
+            "sleep",
+            "spot"
+          ],
+          "init_description": "I am now at the sleep spot."
+        }
+      ],
+      "characters": [
+        "Me",
+        "Tom",
+        "Zack",
+        "Alex",
+        "Dominic"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Petrol_Station",
+      "name": "Petrol Station",
+      "tokens": [
+        "petrol",
+        "station"
+      ],
+      "sub_locations": [
+        {
+          "name": "pump_area",
+          "items_id": "pump_items",
+          "tokens": [
+            "pump",
+            "area"
+          ],
+          "init_description": "I am now in the pump area."
+        },
+        {
+          "name": "station_shop",
+          "items_id": "station_shop_items",
+          "tokens": [
+            "station",
+            "shop"
+          ],
+          "init_description": "I am now inside the station shop."
+        },
+        {
+          "name": "storage_corner",
+          "items_id": "storage_corner_items",
+          "tokens": [
+            "storage",
+            "corner"
+          ],
+          "init_description": "I am now in the storage corner."
+        },
+        {
+          "name": "parking_zone",
+          "items_id": "petrol_parking_items",
+          "tokens": [
+            "parking",
+            "zone"
+          ],
+          "init_description": "I am now in the parking zone."
+        }
+      ],
+      "characters": [
+        "Me",
+        "Dominic",
+        "Zack"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Coastal_Ghost_Town",
+      "name": "Abandoned Coastal Town",
+      "tokens": [
+        "coast",
+        "ghost",
+        "town",
+        "shore"
+      ],
+      "sub_locations": [
+        {
+          "name": "foggy_street",
+          "items_id": "fog_street_items",
+          "tokens": [
+            "fog",
+            "street"
+          ],
+          "init_description": "I am now on the foggy street."
+        },
+        {
+          "name": "abandoned_houses",
+          "items_id": "abandoned_house_items",
+          "tokens": [
+            "abandoned",
+            "house"
+          ],
+          "init_description": "I am now among the abandoned houses."
+        },
+        {
+          "name": "shoreline",
+          "items_id": "shore_items",
+          "tokens": [
+            "shore",
+            "beach"
+          ],
+          "init_description": "I am now at the shoreline."
+        }
+      ],
+      "characters": [],
+      "scenes": []
+    },
+    {
+      "id": "Shore_Signal_Point",
+      "name": "Foggy Shoreline",
+      "tokens": [
+        "shore",
+        "signal"
+      ],
+      "sub_locations": [
+        {
+          "name": "wrecked_car",
+          "items_id": "wrecked_car_items",
+          "tokens": [
+            "car",
+            "wreck"
+          ],
+          "init_description": "I am now beside the wrecked car."
+        },
+        {
+          "name": "open_water",
+          "items_id": "water_items",
+          "tokens": [
+            "water"
+          ],
+          "init_description": "I am now facing the open water."
+        }
+      ],
+      "characters": [],
+      "scenes": []
+    },
+    {
+      "id": "Rescue_Ship",
+      "name": "Nuclear Ark Ship",
+      "tokens": [
+        "ship",
+        "ark"
+      ],
+      "sub_locations": [
+        {
+          "name": "deck",
+          "items_id": "ship_deck_items",
+          "tokens": [
+            "deck"
+          ],
+          "init_description": "I am now on the rescue ship deck."
+        },
+        {
+          "name": "rescue_boat",
+          "items_id": "boat_items",
+          "tokens": [
+            "boat"
+          ],
+          "init_description": "I am now by the rescue boat."
+        }
+      ],
+      "characters": [
+        "Ship_Crew",
+        "Ship_Officer"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Ghost_Town_Beach",
+      "name": "Ghost Town Beach",
+      "tokens": [
+        "ghost",
+        "town",
+        "beach"
+      ],
+      "sub_locations": [
+        {
+          "name": "foggy_road",
+          "items_id": "road_items",
+          "tokens": [
+            "foggy",
+            "road"
+          ],
+          "init_description": "I am now on the foggy road."
+        },
+        {
+          "name": "beach_shore",
+          "items_id": "beach_items",
+          "tokens": [
+            "beach",
+            "shore"
+          ],
+          "init_description": "I am now on the beach shore."
+        },
+        {
+          "name": "abandoned_house",
+          "items_id": "ghost_house_items",
+          "tokens": [
+            "abandoned",
+            "house"
+          ],
+          "init_description": "I am now beside the abandoned house."
+        },
+        {
+          "name": "water_edge",
+          "items_id": "water_edge_items",
+          "tokens": [
+            "water",
+            "edge"
+          ],
+          "init_description": "I am now at the water's edge."
+        }
+      ],
+      "characters": [
+        "Me",
+        "Dom",
+        "Said",
+        "Derick",
+        "Zack",
+        "Tom"
+      ],
+      "scenes": []
+    },
+    {
+      "id": "Rescue_Ship",
+      "name": "Rescue Ship",
+      "tokens": [
+        "rescue",
+        "ship"
+      ],
+      "sub_locations": [
+        {
+          "name": "deck",
+          "items_id": "deck_items",
+          "tokens": [
+            "deck"
+          ],
+          "init_description": "I am now on the rescue ship deck."
+        },
+        {
+          "name": "crew_quarters",
+          "items_id": "crew_items",
+          "tokens": [
+            "crew",
+            "quarters"
+          ],
+          "init_description": "I am now inside the crew quarters."
+        }
+      ],
+      "characters": [
+        "Ship_Crew",
+        "Me",
+        "Dom"
+      ],
+      "scenes": []
+    }
+  ]
+}

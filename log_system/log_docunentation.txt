@@ -1,0 +1,38 @@
+What will be stored in logs are:
+
+1)Steps, scenes, location, inventory's and etc. 
+
+
+For each scene logs will be saved independently
+
+the Steps are stred in format:
+
+
+1)Command_RAW
+2)Command_formated
+3)Location of action
+4)real time of action
+5)Characters init data
+6) Success or not (+ reason)
+
+
+{
+    actions:[
+    {    
+        scene:["Peripetiea"] : {
+            location: ["Init_house", "living_room"],
+            Command_RAW: "Go to kitchen"
+            Command_formated: {"action": "go", "destination": "kitchen"}
+            RTA: 14:35:12
+            CID:  [
+            {"health": 75},
+            {"action_speed": 9},
+            {"endurance": 55},
+            {"strength": 70},
+            {"init_items": ["notebook", "pen", "phone"]}
+            ]
+            Status: {"success":"room exists and in the same location"}
+        },
+        }
+    ]
+}

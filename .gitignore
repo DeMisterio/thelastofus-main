@@ -1,0 +1,62 @@
+# Virtual Environments
+venv/
+venv310/
+env/
+.env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Rasa
+.rasa/
+rasa_project/models/
+rasa_project/.rasa/
+rasa_project/results/
+rasa_project/story_graph.dot
+
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

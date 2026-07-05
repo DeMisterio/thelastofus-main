@@ -1,0 +1,21 @@
+recipe: default.v1
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: LanguageModelFeaturizer
+  model_name: "roberta"
+  model_weights: "roberta-large"
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: true
+- name: EntitySynonymMapper
+policies:
+- name: RulePolicy
+assistant_id: 20260705-015215-breezy-support

@@ -1,0 +1,71 @@
+-Entity system: the control of the database
+
+--the work: initialise the classes for each of the objective from the game:
+
+---class: scenes
+
+this.scene_id = json.parse("scene_id")
+this.scene_title = json.parse("scene_title")
+this.scene_locations = json.parse("locations")
+this.scene_finish_condition = json.parse("on_complete")
+this.scene_intro = json.parse("intro_text")
+
+this.next_scene = find_scene_by_number( current_scene_number + 1 )
+
+---class: locations
+
+this.location.id = json.parse("location_id")
+this.current_location = character("Me").location
+this.location.sub_locations = json.parse("sub_locations")
+this.location.characters = filter(
+    json.parse("characters"),
+    character.life != "dead"
+)
+this.location.scene = json.parse("scene_id")
+this.location.items = load_items_from_sub_locations(
+    this.location.sub_locations
+)
+
+---class: character
+
+this.character.name = json.parse("character_n")
+this.character.type = json.parse("character_type")
+this.character.personality = json.parse("personality")
+this.character.parameters = json.parse("init_parameters")
+this.character.health = parameters["health"]
+this.character.action_speed = parameters["action_speed"]
+this.character.endurance = parameters["endurance"]
+this.character.strength = parameters["strength"]
+this.character.inventory = parameters["init_items"]
+this.location = assigned_location
+
+
+---class: items
+
+this.item.id = json_item["id"]
+this.item.type = json_item["type"]
+this.item.effects = json_item["effects"]
+this.item.functionality = json_item["functionality"]
+this.item.harm_rate = json_item["HarmRate"]
+this.item.movable = json_item["movable"]
+this.item_container = find_container_by_item_id( this.item.id )
+this.item_set = find_set_by_container( this.item_container )
+this.item_location = resolve_location_from_set( this.item_set )
+
+
+INITIALISATION_ORDER = 
+
+Scene => character => location => items. This render helps to preserve hierarchy of loading
+
+The structure of the Data in project 
+
+Scene
+    → Location
+        → Sub-location
+            → Set
+                → Containers
+                    → Items
+                        → Properties / Effects
+
+
+THIS IS THE LEGACY DATA. NEW ALGORITHM MAY BE DIFFERENT

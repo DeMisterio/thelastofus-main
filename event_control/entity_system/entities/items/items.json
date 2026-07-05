@@ -1,0 +1,1573 @@
+{
+  "sets": [
+    {
+      "id": "kitchen_set",
+      "containers": [
+        {"id": "shelf", "verbs": ["on the"]},
+        {"id": "table", "verbs": ["on the"]},
+        {"id": "tabletop", "verbs": ["on the"]},
+        {"id": "washing_machine", "verbs": ["inside the"]},
+        {"id": "fridge", "verbs": ["inside the"]},
+        {"id": "drawer", "verbs": ["inside the"]},
+        {"id": "sink", "verbs": ["in the"]},
+        {"id": "cabinet", "verbs": ["inside the"]},
+        {"id": "trash_bin", "verbs": ["inside the"]},
+        {"id": "microwave", "verbs": ["inside the"]},
+        {"id": "oven", "verbs": ["inside the"]}
+      ]
+    },
+    {
+      "id": "living_room_set",
+      "containers": [
+        { "id": "sofa", "verbs": ["on the"] },
+        { "id": "nightstand", "verbs": ["inside the"] },
+        { "id": "living_room_table", "verbs": ["on the"] },
+        { "id": "wardrobe", "verbs": ["inside the"] }
+      ]
+    },
+    {
+      "id": "bathroom_set",
+      "containers": [
+        { "id": "shower_cabin", "verbs": ["inside the"] },
+        { "id": "sink", "verbs": ["in the"] },
+        { "id": "bathroom_shelf", "verbs": ["on the"] },
+        { "id": "toilet", "verbs": ["inside the"] }
+      ]
+    },
+    {
+        "id": "bedroom_set",
+        "containers": [
+            { "id": "bed", "verbs": ["under the", "on the"] },
+            { "id": "bedside_table", "verbs": ["inside the", "on the"] },
+            { "id": "wardrobe_bedroom", "verbs": ["inside the"] },
+            { "id": "desk", "verbs": ["on the"] }
+        ]
+    },
+    {
+        "id": "hall_set",
+        "containers": [
+            { "id": "shoe_rack", "verbs": ["on the"] },
+            { "id": "coat_hanger", "verbs": ["on the"] },
+            { "id": "hall_drawer", "verbs": ["inside the"] },
+            { "id": "floor_mat", "verbs": ["under the"] }
+        ]
+    },
+    {
+        "id": "balcony_set",
+        "containers": [
+            { "id": "balcony_table", "verbs": ["on the"] },
+            { "id": "plant_shelf", "verbs": ["on the"] },
+            { "id": "storage_box", "verbs": ["inside the"] }
+        ]
+    },
+
+    {
+        "id": "taxi_items",
+        "containers": [
+          { "id": "armrest_compartment", "verbs": ["inside the"] },
+          { "id": "glovebox_taxi", "verbs": ["inside the"] },
+          { "id": "backseat_floor", "verbs": ["on the"] }
+        ]
+    },
+    {
+      "id": "car_items",
+      "containers": [
+        { "id": "car_glovebox", "verbs": ["inside the"] },
+        { "id": "car_seat", "verbs": ["on the"] },
+        { "id": "car_floor", "verbs": ["on the"] }
+      ]
+    },
+    {
+      "id": "parkedcars_items",
+      "containers": [
+        { "id": "trunk", "verbs": ["inside the"] },
+        { "id": "front_seat", "verbs": ["on the"] },
+        { "id": "under_seat", "verbs": ["under the"] }
+      ]
+    },
+    {
+      "id": "fence_items",
+      "containers": [
+        { "id": "fence_base", "verbs": ["under the"] },
+        { "id": "trash_pile", "verbs": ["inside the"] }
+      ]
+    },
+    {
+      "id": "fog_street_items",
+      "containers": [
+        { "id": "street_ground", "verbs": ["on the"] },
+        { "id": "abandoned_car", "verbs": ["inside the", "on the"] },
+        { "id": "broken_lamp_post", "verbs": ["on the"] }
+      ]
+    },
+    {
+      "id": "abandoned_house_items",
+      "containers": [
+        { "id": "collapsed_table", "verbs": ["on the"] },
+        { "id": "open_drawer", "verbs": ["inside the"] },
+        { "id": "fireplace", "verbs": ["inside the"] }
+      ]
+    },
+    {
+      "id": "shore_items",
+      "containers": [
+        { "id": "wet_sand", "verbs": ["on the"] },
+        { "id": "driftwood_pile", "verbs": ["on the"] },
+        { "id": "washed_crate", "verbs": ["inside the"] }
+      ]
+    },
+    {
+      "id": "wrecked_car_items",
+      "containers": [
+        { "id": "burnt_trunk", "verbs": ["inside the"] },
+        { "id": "front_seat_wreck", "verbs": ["on the"] }
+      ]
+    },
+    {
+      "id": "ship_deck_items",
+      "containers": [
+        { "id": "metal_crate", "verbs": ["inside the"] },
+        { "id": "deck_floor", "verbs": ["on the"] }
+      ]
+    },
+    {
+      "id": "pump_items",
+      "containers": [
+        { "id": "fuel_hose", "verbs": ["on the"] },
+        { "id": "oil_spill", "verbs": ["on the"] }
+      ]
+    },
+    {
+      "id": "busstop_items",
+      "containers": [
+        { "id": "bench", "verbs": ["on the", "under the"] },
+        { "id": "trash_can_street", "verbs": ["inside the"] }
+      ]
+    },
+    {
+      "id": "elder_living_items",
+      "containers": [
+        { "id": "antique_cabinet", "verbs": ["inside the"] },
+        { "id": "coffee_table", "verbs": ["on the"] }
+      ]
+    },
+    {
+      "id": "driver_items",
+      "containers": [
+        { "id": "steering_column", "verbs": ["under the"] },
+        { "id": "driver_door_pocket", "verbs": ["inside the"] }
+      ]
+    },
+    {
+      "id": "fire_items",
+      "containers": [
+        { "id": "fire_pit", "verbs": ["inside the"] }
+      ]
+    },
+    {
+      "id": "pump_items",
+      "containers": [
+        { "id": "fuel_pump", "verbs": ["on the"] },
+        { "id": "ground_oil_spill", "verbs": ["in the"] }
+      ]
+    },
+    {
+      "id": "beach_items",
+      "containers": [
+        { "id": "driftwood", "verbs": ["under the"] },
+        { "id": "sand_pile", "verbs": ["buried in"] }
+      ]
+    }
+
+
+  ],
+
+    "containers": [
+      {
+        "id": "shelf",
+        "tokens": ["shelf"],
+        "items": [
+          { "name": "water bottle", "id": "water_bottle" },
+          { "name": "bread pieces", "id": "bread_pieces" },
+          { "name": "fork", "id": "fork" },
+          { "name": "cup", "id": "cup" },
+          { "name": "kettle", "id": "kettle" }
+        ],
+        "state": []
+      },
+      {
+        "id": "table",
+        "tokens": ["table"],
+        "items": [
+          { "name": "cup", "id": "cup" },
+          { "name": "salad", "id": "salad" },
+          { "name": "phone", "id": "phone" },
+          { "name": "rusty spoon", "id": "rusty_spoon" },
+          { "name": "plate", "id": "plate" }
+        ],
+        "state": []
+      },
+      {
+        "id": "fridge",
+        "tokens": ["fridge"],
+        "items": [
+          { "name": "milk carton", "id": "milk_carton" },
+          { "name": "eggs pack", "id": "eggs_pack" },
+          { "name": "cold chicken", "id": "cold_chicken" },
+          { "name": "yogurt", "id": "yogurt" }
+        ],
+        "state": []
+      },
+      {
+        "id": "drawer",
+        "tokens": ["drawer"],
+        "items": [
+          { "name": "knife", "id": "knife" },
+          { "name": "scissors", "id": "scissors" },
+          { "name": "lighter", "id": "lighter" },
+          { "name": "measuring tape", "id": "measuring_tape" }
+        ],
+        "state": []
+      },
+      {
+        "id": "sink",
+        "tokens": ["sink"],
+        "items": [
+          { "name": "dirty plate", "id": "dirty_plate" },
+          { "name": "wet sponge", "id": "wet_sponge" }
+        ],
+        "state": []
+      },
+      {
+        "id": "cabinet",
+        "tokens": ["cabinet"],
+        "items": [
+          { "name": "tea box", "id": "tea_box" },
+          { "name": "salt shaker", "id": "salt_shaker" },
+          { "name": "pepper shaker", "id": "pepper_shaker" },
+          { "name": "olive oil bottle", "id": "olive_oil_bottle" }
+        ],
+        "state": []
+      },
+      {
+        "id": "trash_bin",
+        "tokens": ["trash", "bin"],
+        "items": [
+          { "name": "banana peel", "id": "banana_peel" },
+          { "name": "empty can", "id": "empty_can" },
+          { "name": "plastic wrap", "id": "plastic_wrap" }
+        ],
+        "state": []
+      },
+      {
+        "id": "microwave",
+        "tokens": ["microwave"],
+        "items": [
+          { "name": "leftover pizza", "id": "leftover_pizza" }
+        ],
+        "state": []
+      },
+      {
+        "id": "oven",
+        "tokens": ["oven"],
+        "items": [
+          { "name": "baking tray", "id": "baking_tray" },
+          { "name": "burnt toast", "id": "burnt_toast" }
+        ],
+        "state": []
+      },
+      {
+        "id": "sofa",
+        "tokens": ["sofa"],
+        "items": [
+          { "name": "doritos_pack", "id": "doritos_pack" },
+          { "name": "ac_remote", "id": "ac_remote" }
+        ],
+        "state": []
+      },
+      {
+        "id": "nightstand",
+        "tokens": ["nightstand"],
+        "items": [
+          { "name": "passport", "id": "passport" },
+          { "name": "cash", "id": "cash" },
+          { "name": "stale_bread", "id": "stale_bread" },
+          { "name": "nolan_mother_photo", "id": "nolan_mother_photo" }
+        ],
+        "state": []
+      },
+      {
+        "id": "wardrobe",
+        "tokens": ["wardrobe"],
+        "items": [
+          { "name": "hunting_knife", "id": "hunting_knife" },
+          { "name": "fishing_rod", "id": "fishing_rod" },
+          { "name": "pistol", "id": "pistol" }
+        ],
+        "state": []
+      },
+      {
+        "id": "living_room_table",
+        "tokens": ["living", "room", "table"],
+        "items": [
+          { "name": "letter", "id": "letter" }
+        ],
+        "state": []
+      },
+      {
+        "id": "shower_cabin",
+        "tokens": ["shower", "cabin"],
+        "items": [
+          { "name": "sponge", "id": "sponge" }
+        ],
+        "state": []
+      },
+      {
+        "id": "sink",
+        "tokens": ["sink"],
+        "items": [
+          { "name": "toothbrush", "id": "toothbrush" }
+        ],
+        "state": []
+      },
+      {
+        "id": "bathroom_shelf",
+        "tokens": ["bathroom", "shelf"],
+        "items": [
+          { "name": "razor_blades", "id": "razor_blades" },
+          { "name": "toothpaste", "id": "toothpaste" }
+        ],
+        "state": []
+      },
+      {
+        "id": "toilet",
+        "tokens": ["toilet"],
+        "items": []
+      },
+      {
+        "id": "bed",
+        "tokens": ["bed"],
+        "items": [
+          { "id": "pillow" },
+          { "id": "blanket" }
+        ],
+        "state": []
+      },
+      {
+        "id": "bedside_table",
+        "tokens": ["bedside", "table"],
+        "items": [
+          { "id": "book" },
+          { "id": "notebook" },
+          { "id": "pen" }
+        ],
+        "state": []
+      },
+      {
+        "id": "wardrobe_bedroom",
+        "tokens": ["wardrobe", "bedroom"],
+        "items": [
+          { "id": "tshirt", "name": "t-shirt" },
+          { "id": "hoodie", "name": "hoodie" }
+        ],
+        "state": []
+      },
+      {
+        "id": "desk",
+        "tokens": ["desk"],
+        "items": [
+          { "id": "letter" }
+        ],
+        "state": []
+      },
+      {
+        "id": "shoe_rack",
+        "tokens": ["shoe", "rack"],
+        "items": [
+          { "id": "single_shoe" }
+        ],
+        "state": []
+      },
+      {
+        "id": "coat_hanger",
+        "tokens": ["coat", "hanger"],
+        "items": [
+          { "id": "gloves" },
+          { "id": "mask" }
+        ],
+        "state": []
+      },
+      {
+        "id": "hall_drawer",
+        "tokens": ["hall", "drawer"],
+        "items": [
+          { "id": "keys" }
+        ],
+        "state": []
+      },
+      {
+        "id": "floor_mat",
+        "tokens": ["floor", "mat"],
+        "items": [
+          { "id": "newspaper" }
+        ],
+        "state": []
+      },
+      {
+        "id": "balcony_table",
+        "tokens": ["balcony", "table"],
+        "items": [
+          { "id": "empty_bottle" },
+          { "id": "cigarette_butt" }
+        ],
+        "state": []
+      },
+      {
+        "id": "plant_shelf",
+        "tokens": ["plant", "shelf"],
+        "items": [
+          { "id": "flower_pot" }
+        ],
+        "state": []
+      },
+      {
+        "id": "storage_box",
+        "tokens": ["storage", "box"],
+        "items": [
+          { "id": "clothespin" }
+        ],
+        "state": []
+      },
+      {
+        "id": "armrest_compartment",
+        "tokens": ["armrest", "compartment"],
+        "items": [
+          { "id": "lighter" },
+          { "id": "cigarette_pack" },
+          { "id": "playing_cards" }
+        ],
+        "state": []
+      },
+      {
+        "id": "glovebox_taxi",
+        "tokens": ["glovebox", "taxi"],
+        "items": [
+          { "id": "nolan_father_photo", "name": "photo of Nolan’s father" }
+        ],
+        "state": []
+      },
+      {
+        "id": "backseat_floor",
+        "tokens": ["backseat", "floor"],
+        "items": [
+          { "id": "dead_dog", "name": "dead dog" },
+          { "id": "dead_woman", "name": "dead woman" }
+        ],
+        "state": []
+      },
+      {
+        "id": "car_glovebox",
+        "tokens": ["car", "glovebox"],
+        "items": [
+          { "id": "keys" },
+          { "id": "notebook" }
+        ],
+        "state": []
+      },
+      {
+        "id": "car_seat",
+        "tokens": ["car", "seat"],
+        "items": [
+          { "id": "plastic_wrap" },
+          { "id": "empty_can" }
+        ],
+        "state": []
+      },
+      {
+        "id": "car_floor",
+        "tokens": ["car", "floor"],
+        "items": [
+          { "id": "newspaper" }
+        ],
+        "state": []
+      },
+      {
+        "id": "trunk",
+        "tokens": ["trunk"],
+        "items": [
+          { "id": "large_empty_courier_bag" },
+          { "id": "clothespin" }
+        ],
+        "state": []
+      },
+      {
+        "id": "front_seat",
+        "tokens": ["front", "seat"],
+        "items": [
+          { "id": "cigarette_pack" },
+          { "id": "lighter" }
+        ],
+        "state": []
+      },
+      {
+        "id": "under_seat",
+        "tokens": ["under", "seat"],
+        "items": [
+          { "id": "playing_cards" }
+        ],
+        "state": []
+      },
+      {
+        "id": "fence_base",
+        "tokens": ["fence", "base"],
+        "items": [
+          { "id": "broken_chain_piece" }
+        ],
+        "state": []
+      },
+      {
+        "id": "trash_pile",
+        "tokens": ["trash", "pile"],
+        "items": [
+          { "id": "plastic_wrap" },
+          { "id": "empty_can" }
+        ],
+        "state": []
+      },
+      {
+        "id": "street_ground",
+        "tokens": ["ground", "street"],
+        "items": [
+          { "id": "wet_newspaper" },
+          { "id": "empty_bottle" },
+          { "id": "plastic_wrap" }
+        ],
+        "state": []
+      },
+      {
+        "id": "abandoned_car",
+        "tokens": ["abandoned", "car"],
+        "items": [
+          { "id": "rotted_blanket" },
+          { "id": "empty_can" }
+        ],
+        "state": []
+      },
+      {
+        "id": "broken_lamp_post",
+        "tokens": ["lamp", "post"],
+        "items": [
+          { "id": "loose_wires" }
+        ],
+        "state": []
+      },
+      {
+        "id": "collapsed_table",
+        "tokens": ["collapsed", "table"],
+        "items": [
+          { "id": "matchbox" },
+          { "id": "old_photo" }
+        ],
+        "state": []
+      },
+      {
+        "id": "fireplace",
+        "tokens": ["fireplace"],
+        "items": [
+          { "id": "charcoal" }
+        ],
+        "state": []
+      },
+      {
+        "id": "driftwood_pile",
+        "tokens": ["driftwood", "wood"],
+        "items": [
+          { "id": "dry_wood_piece" },
+          { "id": "fuel_rope" }
+        ],
+        "state": []
+      },
+      {
+        "id": "burnt_trunk",
+        "tokens": ["burnt", "trunk"],
+        "items": [
+          { "id": "signal_flare" }
+        ],
+        "state": []
+      },
+      {
+      "id": "metal_crate",
+      "tokens": ["metal", "crate"],
+      "items": [
+        { "id": "thermal_blanket" },
+        { "id": "water_ration" }
+      ],
+      "state": []
+      },
+      {
+      "id": "deck_floor",
+      "tokens": ["deck", "floor"],
+      "items": [
+        { "id": "wet_rope" },
+        { "id": "rusty_hook" },
+        { "id": "oil_stain" }
+      ],
+      "state": []
+      },
+      {
+      "id": "fuel_hose",
+      "tokens": ["fuel", "hose"],
+      "items": [
+        { "id": "petrol_residue" }
+      ],
+      "state": []
+    },
+    {
+      "id": "bench",
+      "tokens": ["bench"],
+      "items": [{ "id": "newspaper" }, { "id": "discarded_ticket" }],
+      "state": []
+    },
+    {
+      "id": "antique_cabinet",
+      "tokens": ["antique", "cabinet"],
+      "items": [{ "id": "silver_utensils" }, { "id": "old_photos" }],
+      "state": []
+    },
+    {
+      "id": "driver_door_pocket",
+      "tokens": ["driver", "door", "pocket"],
+      "items": [{ "id": "flashlight" }, { "id": "rag" }],
+      "state": []
+    },
+    {
+      "id": "fire_pit",
+      "tokens": ["fire", "pit"],
+      "items": [{ "id": "ash" }, { "id": "charcoal" }],
+      "state": []
+    },
+    {
+      "id": "fuel_pump",
+      "tokens": ["fuel", "pump"],
+      "items": [{ "id": "fuel_nozzle" }],
+      "state": []
+    },
+    {
+      "id": "driftwood",
+      "tokens": ["driftwood"],
+      "items": [{ "id": "seaweed" }, { "id": "crab_shell" }],
+      "state": []
+    }
+    ],
+  
+    "items": [
+      {
+        "id": "milk_carton",
+        "tokens": ["milk", "carton"],
+        "type": "food",
+        "NV": 150,
+        "Eating_speed": 3,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "state":[],
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "eggs_pack",
+        "tokens": ["eggs", "pack"],
+        "type": "food",
+        "NV": 120,
+        "Eating_speed": 4,
+        "ignitable":["true", 0.3],
+        "effect": "fragile",
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "cold_chicken",
+        "tokens": ["cold", "chicken"],
+        "type": "food",
+        "NV": 500,
+        "Eating_speed": 6,
+        "ignitable":["true", 0.1],
+        "effect": "can_spoil",
+        "functionality": null,
+        "HarmRate": 2,
+        "movable": { "access": true, "weight": 4 }
+      },
+      {
+        "id": "yogurt",
+        "tokens": ["yogurt"],
+        "type": "food",
+        "NV": 90,
+        "Eating_speed": 2,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "knife",
+        "tokens": ["knife"],
+        "type": "weapon",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": "attack",
+        "HarmRate": 25,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "scissors",
+        "tokens": ["scissors"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": "cut",
+        "HarmRate": 8,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "lighter",
+        "tokens": ["lighter"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": "fire_source",
+        "functionality": null,
+        "HarmRate": 3,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "measuring_tape",
+        "tokens": ["measuring", "tape"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "dirty_plate",
+        "tokens": ["dirty", "plate"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": "unsanitary",
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "wet_sponge",
+        "tokens": ["wet", "sponge"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.2],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "tea_box",
+        "tokens": ["tea", "box"],
+        "type": "food",
+        "NV": 10,
+        "Eating_speed": 1,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "salt_shaker",
+        "tokens": ["salt", "shaker"],
+        "type": "food",
+        "NV": 0,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "pepper_shaker",
+        "tokens": ["pepper", "shaker"],
+        "type": "food",
+        "NV": 0,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "olive_oil_bottle",
+        "tokens": ["olive", "oil", "bottle"],
+        "type": "food",
+        "NV": 1200,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 1,
+        "movable": { "access": true, "weight": 3 }
+      },
+      {
+        "id": "banana_peel",
+        "tokens": ["banana", "peel"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 1,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "empty_can",
+        "tokens": ["empty", "can"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": "noise",
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "plastic_wrap",
+        "tokens": ["plastic", "wrap"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.2],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "leftover_pizza",
+        "tokens": ["leftover", "pizza"],
+        "type": "food",
+        "NV": 350,
+        "Eating_speed": 3,
+        "ignitable":["true", 0.3],
+        "effect": "stale",
+        "functionality": null,
+        "HarmRate": 1,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "baking_tray",
+        "tokens": ["baking", "tray"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": "hot_surface",
+        "functionality": null,
+        "HarmRate": 4,
+        "movable": { "access": true, "weight": 5 }
+      },
+      {
+        "id": "burnt_toast",
+        "tokens": ["burnt", "toast"],
+        "type": "food",
+        "NV": 50,
+        "Eating_speed": 1,
+        "ignitable":["false", 0],
+        "effect": "taste_bad",
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "doritos_pack",
+        "tokens": ["doritos", "pack"],
+        "type": "food",
+        "NV": 450,
+        "Eating_speed": 5,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "ac_remote",
+        "tokens": ["ac", "remote"],
+        "type": "device",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "passport",
+        "tokens": ["passport"],
+        "type": "document",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.5],
+        "effect": null,
+        "functionality": "verify_identity",
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "cash",
+        "tokens": ["cash"],
+        "type": "valuable",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "stale_bread",
+        "tokens": ["stale", "bread"],
+        "type": "food",
+        "NV": 80,
+        "Eating_speed": 4,
+        "ignitable":["true", 0.3],
+        "effect": "poisonous",
+        "functionality": null,
+        "HarmRate": 5,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "nolan_father_photo",
+        "tokens": ["nolan", "father", "photo"],
+        "type": "sentimental",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.6],
+        "effect": "cry",
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "hunting_knife",
+        "tokens": ["hunting", "knife"],
+        "type": "weapon",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": "attack",
+        "HarmRate": 40,
+        "movable": { "access": true, "weight": 3 }
+      },
+      {
+        "id": "fishing_rod",
+        "tokens": ["fishing", "rod"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": "hook",
+        "HarmRate": 4,
+        "movable": { "access": true, "weight": 4 }
+      },
+      {
+        "id": "pistol",
+        "tokens": ["pistol"],
+        "type": "weapon",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": "shoot",
+        "HarmRate": 90,
+        "movable": { "access": true, "weight": 5 }
+      },
+      {
+        "id": "letter",
+        "tokens": ["letter"],
+        "type": "document",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.4],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "sponge",
+        "tokens": ["sponge"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "toothbrush",
+        "tokens": ["toothbrush"],
+        "type": "hygiene",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "razor_blades",
+        "tokens": ["razor", "blades"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": "attack",
+        "HarmRate": 40,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "toothpaste",
+        "tokens": ["toothpaste"],
+        "type": "hygiene",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "pillow",
+        "tokens": ["pillow"],
+        "type": "comfort",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.6],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 1,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "blanket",
+        "tokens": ["blanket"],
+        "type": "comfort",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.7],
+        "effect": null,
+        "functionality": "warm",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 3 }
+      },
+      {
+        "id": "book",
+        "tokens": ["book"],
+        "type": "document",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.7],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "notebook",
+        "tokens": ["note", "book"],
+        "type": "document",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.5],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "pen",
+        "tokens": ["pen"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "keys",
+        "tokens": ["keys"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": "unlock",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "gloves",
+        "tokens": ["gloves"],
+        "type": "clothing",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.2],
+        "effect": "warm",
+        "functionality": "wear",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "single_shoe",
+        "tokens": ["single", "shoe"],
+        "type": "clothing",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.2],
+        "effect": null,
+        "functionality": "wear",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "newspaper",
+        "tokens": ["news", "paper"],
+        "type": "document",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.5],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "mask",
+        "tokens": ["mask"],
+        "type": "hygiene",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": "wear",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "cigarette_butt",
+        "tokens": ["cigarette", "butt"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.01],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "flower_pot",
+        "tokens": ["flower", "pot"],
+        "type": "object",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 3 }
+      },
+      {
+        "id": "plastic_chair",
+        "tokens": ["plastic", "chair"],
+        "type": "object",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.4],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": false, "weight": 8 }
+      },
+      {
+        "id": "empty_bottle",
+        "tokens": ["empty", "bottle"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.3],
+        "effect": null,
+        "functionality": "noise",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "clothespin",
+        "tokens": ["clothes", "pin"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "cigarette_pack",
+        "tokens": ["cigarette", "pack"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.2],
+        "effect": "poisonous",
+        "functionality": null,
+        "HarmRate": 10,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "energy_drink_can",
+        "tokens": ["energy", "drink", "can"],
+        "type": "food",
+        "NV": 80,
+        "Eating_speed": 1,
+        "ignitable":["false", 0],
+        "effect": "caffeinated",
+        "functionality": "drink",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "teddy_bear",
+        "tokens": ["teddy", "bear"],
+        "type": "sentimental",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.6],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "large_empty_courier_bag",
+        "tokens": ["large", "empty", "courier", "bag"],
+        "type": "container",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [true, 0.3],
+        "effect": null,
+        "functionality": "store_items",
+        "HarmRate": 0,
+        "capacity": 20, 
+        "movable": { "access": true, "weight": 3 }
+      },
+      {
+        "id": "child_glove",
+        "tokens": ["child", "glove"],
+        "type": "clothing",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.1],
+        "effect": "warm",
+        "functionality": "wear",
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "broken_chain_piece",
+        "tokens": ["broken", "chain", "piece"],
+        "type": "weapon",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["false", 0],
+        "effect": null,
+        "functionality": "attack",
+        "HarmRate": 10,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "playing_cards",
+        "tokens": ["playing", "cards"],
+        "type": "object",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable":["true", 0.2],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "dead_dog",
+        "tokens": ["dead", "dog"],
+        "type": "corpse",
+        "NV": 1000,
+        "Eating_speed": null,
+        "ignitable":["true", 0.3],
+        "effect": "poisonous",
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": false, "weight": 40 }
+      },
+      {
+        "id": "dead_woman",
+        "tokens": ["dead", "woman"],
+        "type": "corpse",
+        "NV": 20,
+        "Eating_speed": null,
+        "ignitable":["true", 0.8],
+        "effect": "poisonous",
+        "functionality": null,
+        "HarmRate": null,
+        "movable": { "access": false, "weight": 55 }
+      },
+      {
+        "id": "rotted_blanket",
+        "tokens": ["rotted", "blanket"],
+        "type": "comfort",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 0.8],
+        "effect": "poisonous",
+        "functionality": "warm",
+        "HarmRate": 1,
+        "capacity": null,
+        "movable": { "access": true, "weight": 4 }
+      },
+      {
+        "id": "loose_wires",
+        "tokens": ["loose", "wires"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 0.6],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 2,
+        "capacity": null,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "dry_wood_piece",
+        "tokens": ["dry", "wood"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 0.9],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "capacity": null,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "fuel_rope",
+        "tokens": ["fuel", "rope"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 0.95],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 5,
+        "capacity": null,
+        "movable": { "access": true, "weight": 3 }
+      },
+      {
+        "id": "signal_flare",
+        "tokens": ["signal", "flare"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 1.0],
+        "effect": null,
+        "functionality": "signal",
+        "HarmRate": 10,
+        "capacity": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "wet_rope",
+        "tokens": ["wet", "rope"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 0.4],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "capacity": null,
+        "movable": { "access": true, "weight": 3 }
+      },
+      {
+        "id": "thermal_blanket",
+        "tokens": ["thermal", "blanket"],
+        "type": "comfort",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 0.4],
+        "effect": "warm",
+        "functionality": "wear",
+        "HarmRate": 0,
+        "capacity": null,
+        "movable": { "access": true, "weight": 2 }
+      },
+      {
+        "id": "water_ration",
+        "tokens": ["water", "ration"],
+        "type": "food",
+        "NV": 300,
+        "Eating_speed": 2,
+        "ignitable": ["false", 0],
+        "effect": null,
+        "functionality": "drink",
+        "HarmRate": 0,
+        "capacity": null,
+        "movable": { "access": true, "weight": 1 }
+      },
+      {
+        "id": "petrol_residue",
+        "tokens": ["petrol", "residue"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": ["true", 0.9],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 5,
+        "capacity": null,
+        "movable": { "access": false, "weight": 0 }
+      },
+      {
+        "id": "discarded_ticket",
+        "tokens": ["discarded", "ticket"],
+        "type": "junk",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [true, 0.8],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "capacity": null,
+        "movable": { "access": true, "weight": 0.1 }
+      },
+      {
+        "id": "silver_utensils",
+        "tokens": ["silver", "utensils"],
+        "type": "valuable",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [false, 0],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 5,
+        "capacity": null,
+        "movable": { "access": true, "weight": 1.5 }
+      },
+      {
+        "id": "flashlight",
+        "tokens": ["flashlight"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [false, 0],
+        "effect": null,
+        "functionality": "signal",
+        "HarmRate": 10,
+        "capacity": null,
+        "movable": { "access": true, "weight": 0.5 }
+      },
+      {
+        "id": "rag",
+        "tokens": ["rag"],
+        "type": "tool",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [true, 0.5],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "capacity": null,
+        "movable": { "access": true, "weight": 0.2 }
+      },
+      {
+        "id": "fuel_nozzle",
+        "tokens": ["fuel", "nozzle"],
+        "type": "object",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [false, 0],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 15,
+        "capacity": null,
+        "movable": { "access": false, "weight": 5 }
+      },
+      {
+        "id": "ancient_map",
+        "tokens": ["ancient", "map"],
+        "type": "document",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [true, 0.7],
+        "effect": null,
+        "functionality": null,
+        "HarmRate": 0,
+        "capacity": null,
+        "movable": { "access": true, "weight": 0.1 }
+      },
+      {
+        "id": "assault_rifle",
+        "tokens": ["assault", "rifle"],
+        "type": "weapon",
+        "NV": null,
+        "Eating_speed": null,
+        "ignitable": [false, 0],
+        "effect": null,
+        "functionality": "shoot",
+        "HarmRate": 100,
+        "capacity": null,
+        "movable": { "access": true, "weight": 4 }
+      }
+
+    ]
+}
+

@@ -1,0 +1,177 @@
+Here is the breakdown of your new algorithm (v2.0), rewritten in English. It fully reflects the logic we implemented with Lonely/Complex tokens, Sentence Winners, and Smart Filtering.
+ITEM RECOGNITION ALGORITHM (v2.0)
+STEP 1 — Cleaning & Tokenization
+We clean the user input by removing "rubbish words" (stop words: the, a, is, on, please...) and splitting the rest into tokens. Crucially, we preserve the original indices of the words.
+ * User Input: "give me razor blased"
+ * Cleaned: ["razor" (idx:2), "blased" (idx:3)]
+STEP 2 — Item Evaluation (Calculation Loop)
+Unlike standard search, we iterate through every item in the database and compare it against the cleaned sentence.
+For every token in an item, we find the best Levenshtein match available in the user's sentence.
+STEP 3 — Probability Calculation (The Fork)
+The final probability depends on the item type:
+ * A. Lonely Item (Single Token)
+   * Probability = The Levenshtein Similarity of the matched word.
+   * Example: User types "passport" → Item passport gets Score 0.9 (if typo) or 1.0.
+ * B. Complex Item (Multi-Token)
+   * First, calculate the Average Probability of all its tokens.
+   * Second, calculate Compactness (Index Distance): How close are the matched words to each other in the user's sentence?
+   * Probability = Average Probability × Compactness.
+   * Logic: If words "hunting" and "knife" are 5 words apart, the probability drops significantly.
+STEP 4 — Determine "Sentence Token Winners"
+This is the "Capture the Flag" phase. For each specific word in the user's sentence, we record which Item ID had the highest similarity score.
+ * Word "razor": Winner → razor_blades (Score 1.0)
+ * Word "blased": Winner → razor_blades (Score 0.67)
+This "Winners List" is used to validate context in the next step.
+STEP 5 — Selection Tournament (Context Validation)
+We take the Top 3 Candidates (sorted by Probability) and determine the final winner:
+ * Find Complex Winner:
+   * Is there a Complex Item in the top 3 whose tokens are listed as "Winners" in Step 4?
+   * If yes → This item has "Context Support" and becomes the priority candidate.
+ * Final Face-off:
+   * Compare the Probability of the Supported Complex Candidate vs. the Best Overall Candidate.
+   * The one with the higher score wins.
+STEP 6 — Smart Filtering (The "Rescue" Logic)
+The final check before returning the result. A candidate is accepted ONLY if:
+ * High Probability: The score is > 0.85 (Strict Threshold).
+   * OR
+ * Strong Token Support: The score is medium (> 0.65), BUT the item contains at least one token with a perfect or near-perfect match (Score ≥ 0.9).
+ * Example: razor blased (Prob 0.83). It fails Condition 1, but passes Condition 2 because "razor" is a 1.0 match.
+RESULT
+A list of identified items that survived the Smart Filter.
+[ {"id": "razor_blades", "probability": 0.83, ...} ]
+
+---
+
+Example 
+
+
+### TEST 1: Complex Perfect Match ###
+Enter input text: cut the passport with razor blades
+
+========================================
+DEBUG LOG FOR: 'cut the passport with razor blades'
+Cleaned Tokens: ['cut', 'passport', 'razor', 'blades']
+--------------------
+TOP 3 Candidates:
+  > passport: Prob 1.00 | MaxToken 1.00 | Complex? False
+  > razor_blades: Prob 1.00 | MaxToken 1.00 | Complex? True
+  > pistol: Prob 0.38 | MaxToken 0.38 | Complex? False
+--------------------
+Sentence Token Winners (Word Context):
+  Word 'cut' (idx 0) -> Won by 'hunting_knife' (Score: 0.29)
+  Word 'passport' (idx 2) -> Won by 'passport' (Score: 1.00)
+  Word 'razor' (idx 4) -> Won by 'razor_blades' (Score: 1.00)
+  Word 'blades' (idx 5) -> Won by 'razor_blades' (Score: 1.00)
+--------------------
+Potential Complex Winner: razor_blades
+
+
+Selected Candidate (Pre-Filter): razor_blades
+Decisison: ACCEPTED 'razor_blades', and 'passport'(High Probability)
+========================================
+
+
+FINAL RESULT: ['razor_blades', 'passport']
+
+
+Amazing. Now the algorithm can find the best matches for each token of the sentence.
+But thats not enough for the complex data to be analysed.
+We have locations, characters, items and so on. And to find the best match for all cathegories in our sentence, 
+We need to temporarely store all existing data's tokens. Thats what we do.
+
+
+{
+  "location": {
+    "Init_house": ["house"], 
+    "Bullets_street": ["bullets", "street"],
+    "Parking_Lot_Bullets": ["bullets", "street", "parking", "lot"],
+    "Industrial_Shop": ["industrial", "shop"],
+    "Elderly_House": ["elderly", "couple", "house"],
+    "Car_Moving": ["moving", "car"],
+    "Open_Field": ["open", "field"],
+    "Petrol_Station": ["petrol", "station"]
+  },
+
+  "sublocation": {
+    "kitchen": ["kitchen"],
+    "living_room": ["living", "room"],
+    "hall": ["hall"],
+    "flipped_taxi": ["flipped", "taxi"],
+    "bus_stop": ["bus", "stop"],
+    "car": ["car"],
+    "main_floor": ["main", "floor"],
+    "driver_seat": ["driver", "seat"],
+    "pump_area": ["pump", "area"]
+  },
+
+  "characters": {
+    "Tom": ["tom"],
+    "Dominic": ["dominic"],
+    "Alex": ["alex"],
+    "Derick": ["derick"],
+    "Me": ["me"],
+    "Sara": ["sara"],
+    "Sara_Husband": ["sara", "husband"],
+    "Gang_Leader": ["gang", "leader"]
+  },
+
+  "item": {
+    // Containers (from containers array)
+    "shelf": ["shelf"],
+    "table": ["table"],
+    "trash_bin": ["trash", "bin"],
+    "fridge": ["fridge"],
+    "armrest_compartment": ["armrest", "compartment"],
+    "glovebox_taxi": ["glovebox", "taxi"],
+
+    // Items (from items array)
+    "milk_carton": ["milk", "carton"],
+    "hunting_knife": ["hunting", "knife"],
+    "razor_blades": ["razor", "blades"],
+    "nolan_father_photo": ["nolan", "father", "photo"],
+    "dead_dog": ["dead", "dog"],
+    "plastic_wrap": ["plastic", "wrap"],
+    "passport": ["passport"]
+  }
+}
+
+We store each data from locations, sub locations, items and so on in this format. 
+Then using the algorithm provided upstairs we find find whether the sentece token has the best match
+from all the cathegories.
+
+And as u guessed, we can easily make the parser to find the results for each of the cathegory in out sentence!
+
+
+
+
+
+Thats what will the algorithm eventually return:
+
+{
+  // Found "house" or specific location names? (None in this sentence)
+  "location": [],
+
+  // Found sublocations? -> "kitchen" matched "kitchen"
+  "sublocation": [
+    "kitchen"
+  ],
+
+  // Found items? -> "hunting knife" matched "hunting_knife"
+  // Note: Simple "knife" might also appear if it passed the threshold
+  "item": [
+    "hunting_knife"
+  ],
+
+  // Found characters? -> "Tom" matched "Tom"
+  "characters": [
+    "Tom"
+  ]
+}
+
+
+
+
+I DONT KNOW why am i writing that much of information. The text here is formatted via AI, so i could express my idea in a better structurised way for you ;)
+
+
+

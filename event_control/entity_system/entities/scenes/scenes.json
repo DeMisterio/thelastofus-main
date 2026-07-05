@@ -1,0 +1,338 @@
+{
+    "scenes": [{
+        "scene_n": 1,
+        "scene_id": 1,
+        "scene_title": "Peripetiea",
+        "locations": [{
+            "location_id": "Init_house", "sub_locations_id": "kitchen"
+        }],
+        "on_complete": null,
+        "intro_text": [
+            { "text": "The day was disrupted by the noise that rules the world. I was celebrating with friends: Mark, the ambitious nursery assistant; Alex, the jokester boxer; Derick, the quiet architect; and Dom, the chaotic journalist.", "weight": 3 },
+            { "text": "Alex: AYYYEE! They won 5:2! Ha-ha, shameful, Zack?", "weight": 2 },
+            { "text": "Tom: Who thought that? Still… 15 UCL.", "weight": 2 },
+            { "text": "Alex:  Don’t remind me of last UCL. Wake up, Zack!", "weight": 2 },
+            { "text": "Derick: Guys, they win and lose daily. What about life after uni?", "weight": 2 },
+            { "text": "Said: Bro, let me eat first. Honestly? I haven’t decided. World’s chaotic.", "weight": 2 },
+            { "text": "Me: Let’s drop it. Raise a glass to friendship!", "weight": 2 },
+            { "text": "Tom: Agree!", "weight": 1 },
+            { "text": "We drank green tea. TV barked with noise. Masked figures announced humanity’s wipeout.", "weight": 3 },
+            { "text": "Hello, humanity! We’re happy to announce your end. You’ve rotted — no fairness, only drama.", "weight": 2 },
+            { "text": "Alex: Get rid of that clown on screen.", "weight": 1 },
+            { "text": "Derick: Alex… tss.", "weight": 1 },
+            { "text": "Screen darkened. World changed forever. Ten hours left. Nuclear warheads ready.", "weight": 3 },
+            { "text": "We thank insiders. Nations under control: Russia, China, USA, etc.", "weight": 2 },
+            { "text": "Alex: Nice joke, lol.", "weight": 1 },
+            { "text": "Tom: Someone’s calling… What the hell?", "weight": 1 },
+            { "text": "Phones buzzed with government alerts: imminent death, nuclear launches. Authorities working to disable.", "weight": 3 },
+            { "text": "Silence followed, then screams from every corner. Chaos erupted.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 2,
+        "scene_id": 2,
+        "scene_title": "Preparation",
+        "locations": [{
+            "location_id": "Init_house",
+            "sub_locations_id": "hall"
+        },{"location": ["Bullets_street"], "sub_locations_id": null}
+            ],
+        "on_complete": {
+            "location": ["Bullets_street"]
+        },
+        "intro_text": [
+            { "text": "The screams outside didn’t stop. They trembled in the walls like a living echo.", "weight": 2 },
+            { "text": "Alex grabbed my arm. 'Bro… we need to get ready. We can’t stay here.'", "weight": 2 },
+            { "text": "My hands were shaking. How do you prepare for the end of the world?", "weight": 1 },
+            { "text": "Tom: 'We need essentials. Passport. Food. Anything we can carry.'", "weight": 1 },
+            { "text": "Derick checked the hallway. 'We don’t have long. Grab what you can.'", "weight": 1 },
+            { "text": "I rushed to the kitchen — my mind blank, my body running on instinct.", "weight": 2 },
+            { "text": "Alex: 'Bro, hurry! We need to be out in minutes!'", "weight": 1 },
+            { "text": "Dom: 'Guys, I heard glass break upstairs… people are losing it!'", "weight": 1 },
+            { "text": "I had one mission: find my passport, knife, and enough food to survive one day.", "weight": 2 },
+            { "text": "Drawers slammed, shelves rattled — everything mattered now.", "weight": 1 }
+        ]
+        },
+        {
+        "scene_n": 3,
+        "scene_id": 3,
+        "scene_title": "Bullet Street",
+        "locations": [{
+            "location_id": "Bullets_street",
+            "sub_locations_id": "corner_shop_entrance"
+        }],
+        "on_complete": {
+            "location": ["parking_zone"]
+        },
+        "intro_text": [
+            { "text": "The street looked like another world — smoke, running silhouettes, broken voices.", "weight": 2 },
+            { "text": "A man bumped into me so hard I almost fell. His eyes were swallowed by fear.", "weight": 1 },
+            { "text": "Dom: 'This is insane… I’ve never seen humans act like this.'", "weight": 1 },
+            { "text": "Tom: 'Keep moving! Parking lot is two blocks away!'", "weight": 1 },
+            { "text": "Then I saw her — a woman lying near the wall, barely conscious.", "weight": 2 },
+            { "text": "Her arm was twisted unnaturally. Bruises covered her face.", "weight": 1 },
+            { "text": "Sara: 'P-please… help me… my husband… he’s looking for me…'", "weight": 1 },
+            { "text": "Alex whispered: 'Bro, we don’t have time. She’s done.'", "weight": 1 },
+            { "text": "Derick: 'Shut up, Alex. He decides.'", "weight": 1 },
+            { "text": "The world froze. One path meant saving her. The other — saving us.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 4,
+        "scene_id": 4,
+        "scene_title": "Parking Lot",
+        "locations": [{
+            "location_id": "parking_zone",
+            "sub_locations_id": "lot_center"
+        }],
+        "on_complete": {
+            "location": ["shop_industrial"]
+        },
+        "intro_text": [
+            { "text": "The parking lot was a graveyard of abandoned cars and dropped belongings.", "weight": 2 },
+            { "text": "We reached our car. Dust covered the windows — I hadn’t touched it in months.", "weight": 1 },
+            { "text": "Tom: 'Try it. Just try to start it.'", "weight": 1 },
+            { "text": "I turned the key. Nothing. Not even a cough.", "weight": 2 },
+            { "text": "Alex: 'Bro… we’re screwed. Starter’s dead.'", "weight": 1 },
+            { "text": "Dom: 'Maybe if we push it? Try rolling?'", "weight": 1 },
+            { "text": "We pushed with all our strength. The car rolled, choked, and died again.", "weight": 2 },
+            { "text": "Alex: 'Okay. I know what's wrong. But we need a replacement part.'", "weight": 1 },
+            { "text": "Derick: 'Where do we find it?'", "weight": 1 },
+            { "text": "Alex: 'There’s a shop ten minutes away… if it’s still there.'", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 5,
+        "scene_id": 5,
+        "scene_title": "The Shop of Last Hope",
+        "locations": [{
+            "location_id": "shop_industrial",
+            "sub_locations_id": "aisle_entrance"
+        }],
+        "on_complete": {
+            "branch": ["scene_6A", "scene_6B"]
+        },
+        "intro_text": [
+            { "text": "The shop was silent — unnervingly silent. Shelves still full, untouched by panic.", "weight": 2 },
+            { "text": "An older man stood at the counter — tired eyes, silver hair.", "weight": 1 },
+            { "text": "Old Man: 'You boys need something?'", "weight": 1 },
+            { "text": "Alex: 'Starter module. Please.'", "weight": 1 },
+            { "text": "Old Man sighed. 'Take it. Take anything… I’ve lived long enough.'", "weight": 2 },
+            { "text": "Then the door slammed open with violent force.", "weight": 1 },
+            { "text": "Armed men rushed inside — shouting, kicking shelves, grabbing whatever they wanted.", "weight": 2 },
+            { "text": "Bandit: 'Hands up! No hero shit!'", "weight": 1 },
+            { "text": "Tom: 'Bro— hide! NOW!'", "weight": 1 },
+            { "text": "The store turned into a maze — shelves, crates, shadows, panic.", "weight": 2 },
+            { "text": "My heart punched my ribs like it wanted out of my body.", "weight": 1 },
+            { "text": "If I hid — we had a chance. If I failed — everything was gone.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 6,
+        "scene_id": "6A",
+        "scene_title": "Escape with the Part",
+        "locations": [{
+            "location_id": "shop_industrial",
+            "sub_locations_id": "back_exit"
+        }],
+        "on_complete": {
+            "location": ["parking_zone"]
+        },
+        "intro_text": [
+            { "text": "I held my breath behind the shelf, motionless. One wrong sound would cost us everything.", "weight": 2 },
+            { "text": "Footsteps echoed between the aisles — slow, searching, predatory.", "weight": 1 },
+            { "text": "Dom covered his mouth to keep from breathing too loudly.", "weight": 1 },
+            { "text": "Alex peeked through a crack. He whispered: 'Bro… one of them is coming our way.'", "weight": 2 },
+            { "text": "Suddenly, a loud crash distracted the gunmen. A shelf collapsed near the front of the store.", "weight": 1 },
+            { "text": "Derick: 'Now. MOVE.'", "weight": 2 },
+            { "text": "We sprinted through the back exit, carrying the stolen starter module.", "weight": 2 },
+            { "text": "Our lungs burned, but the parking lot was close. If we made it — we lived.", "weight": 1 }
+        ]
+        },
+        {
+        "scene_n": 6,
+        "scene_id": "6B",
+        "scene_title": "The Taking",
+        "locations": [{
+            "location_id": "shop_industrial",
+            "sub_locations_id": "main_floor"
+        }],
+        "on_complete": {
+            "location": ["parking_zone"]
+        },
+        "intro_text": [
+            { "text": "I tried to hide — but it was too late.", "weight": 2 },
+            { "text": "A hand grabbed my shoulder and slammed me against the shelf.", "weight": 1 },
+            { "text": "Bandit: 'Thought you could play hero?'", "weight": 1 },
+            { "text": "Dom shouted, but another gunman pointed a pistol at him.", "weight": 1 },
+            { "text": "They ripped the car keys from Alex's pocket.", "weight": 2 },
+            { "text": "Bandit Leader: 'You're coming with us. Show us the car.'", "weight": 2 },
+            { "text": "Alex looked at me — terrified but trying to smile. 'Bro… it's okay. Just survive.'", "weight": 1 },
+            { "text": "They dragged him away. His voice slowly faded into the distance.", "weight": 2 },
+            { "text": "We had nothing. No car. No supplies. And Alex… gone.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 7,
+        "scene_id": 7,
+        "scene_title": "No Direction",
+        "locations": [{
+            "location_id": "country_road",
+            "sub_locations_id": "inside_car"
+        }],
+        "on_complete": {
+            "location": ["field_rest"]
+        },
+        "intro_text": [
+            { "text": "The car rolled through the ruins of the city, headlights cutting through smoke.", "weight": 2 },
+            { "text": "Tom gripped the wheel with trembling hands.", "weight": 1 },
+            { "text": "Zack tapped his knee nervously — a steady beat of fear.", "weight": 1 },
+            { "text": "Most of the apps on my phone refused to load.", "weight": 2 },
+            { "text": "Every navigation app displayed the same message: 'Service unavailable.'", "weight": 1 },
+            { "text": "Tom: 'Bro, we can’t drive blindly. Find SOMETHING.'", "weight": 2 },
+            { "text": "I scrolled through my phone — screenshots, old projects, offline files.", "weight": 1 },
+            { "text": "Somewhere in this digital graveyard, a map had to exist.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 8,
+        "scene_id": 8,
+        "scene_title": "Field of Echoes",
+        "locations": [{
+            "location_id": "open_field",
+            "sub_locations_id": "car_side"
+        }],
+        "on_complete": {
+            "location": ["morning_field"]
+        },
+        "intro_text": [
+            { "text": "Tom killed the engine. Rain dripped softly onto the metal roof.", "weight": 2 },
+            { "text": "The world outside was an empty field — silent, endless, unsettling.", "weight": 1 },
+            { "text": "Zack stepped out first, his breath forming pale clouds.", "weight": 1 },
+            { "text": "Dom groaned. 'Bro… I’m freezing already.'", "weight": 1 },
+            { "text": "Objectives appeared in my mind like survival instincts whispering commands.", "weight": 2 },
+            { "text": "Make fire. Make water. Stay alive.", "weight": 2 },
+            { "text": "Hours later, after collapsing near the dying flames — something touched the car door.", "weight": 2 },
+            { "text": "A slow, scraping, deliberate sound.", "weight": 1 },
+            { "text": "I turned my head — glowing eyes surrounded us.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 9,
+        "scene_id": 9,
+        "scene_title": "Petrol — The Debt",
+        "locations": [{
+            "location_id": "petrol_station",
+            "sub_locations_id": "pump_area"
+        }],
+        "on_complete": {
+            "branch": ["scene_10_fixedCar", "scene_10_noCar"]
+        },
+        "intro_text": [
+            { "text": "Morning arrived with a pale, colourless light over the empty field.", "weight": 2 },
+            { "text": "Dom stared at the car. 'We need fuel. This tank is bone-dry.'", "weight": 1 },
+            { "text": "The petrol station looked abandoned — but not dead.", "weight": 1 },
+            { "text": "The metal sign creaked as the wind pushed it back and forth.", "weight": 1 },
+            { "text": "I grabbed an empty container and approached the pump.", "weight": 2 },
+            { "text": "One mistake could destroy the engine forever.", "weight": 1 },
+            { "text": "Three minutes. That was all the time we had before something went wrong.", "weight": 2 },
+            { "text": "And something DID go wrong.", "weight": 2 },
+            { "text": "A black car rolled into the station. Five men stepped out.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 10,
+        "scene_id": 10,
+        "scene_title": "Wrong Road",
+        "locations": [{
+            "location_id": "Ghost_Town_Beach",
+            "sub_locations_id": "foggy_road"
+        }],
+        "on_complete": {
+            "location": ["beach_shore"]
+        },
+        "intro_text": [
+            { "text": "The fog thickened until the headlights barely pierced the darkness.", "weight": 2 },
+            { "text": "Suddenly, the road ended. We arrived in a ghost town near a desolate beach.", "weight": 2 },
+            { "text": "Said panic rose. 'This is the WRONG direction! We shouldn't be here!'", "weight": 1 },
+            { "text": "Dom remained composed. 'We don't know anything anymore. Let's look around.'", "weight": 1 },
+            { "text": "We realized we needed to signal someone, but we had no flare gun.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 11,
+        "scene_id": 11,
+        "scene_title": "The Signal",
+        "locations": [{
+            "location_id": "Ghost_Town_Beach",
+            "sub_locations_id": "beach_shore"
+        }],
+        "on_complete": {
+            "location": ["rescue_ship_deck"]
+        },
+        "intro_text": [
+            { "text": "The wind sliced through our jackets. We needed to make a signal.", "weight": 2 },
+            { "text": "We had to reach 100 Signal Points before the cold took us.", "weight": 1 },
+            { "text": "We could shout, burn the car, or shoot into the sky.", "weight": 1 },
+            { "text": "After a desperate struggle, a beam of light cut through the fog.", "weight": 2 },
+            { "text": "A massive ship emerged from the darkness.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 12,
+        "scene_id": 12,
+        "scene_title": "Shock",
+        "locations": [{
+            "location_id": "Ghost_Town_Beach",
+            "sub_locations_id": "water_edge"
+        }],
+        "on_complete": {
+            "branch": ["scene_13_swim", "scene_13_sacrifice"]
+        },
+        "intro_text": [
+            { "text": "The ship was close, but Derick whispered, 'I... can't swim.'", "weight": 2 },
+            { "text": "Dom pulled out his gun. 'Someone has to stay behind. We can't carry everyone.'", "weight": 2 },
+            { "text": "He pointed the gun at Said.", "weight": 1 },
+            { "text": "I had to choose: Sacrifice myself and swim, or let the group crumble.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 13,
+        "scene_id": "13A",
+        "scene_title": "The Traitor",
+        "locations": [{
+            "location_id": "Rescue_Ship",
+            "sub_locations_id": "deck"
+        }],
+        "on_complete": {
+            "end_game": true
+        },
+        "intro_text": [
+            { "text": "We were pulled aboard the rescue boat. Dom threw his gun into the sea.", "weight": 1 },
+            { "text": "Dom: 'I lost control... it was survival instinct.'", "weight": 1 },
+            { "text": "On the main deck, the crew found a gun in Said's backpack.", "weight": 2 },
+            { "text": "They threw Said overboard. Dom watched. Dead stare.", "weight": 2 },
+            { "text": "The game ended not with a win, but with moral devastation.", "weight": 2 }
+        ]
+        },
+        {
+        "scene_n": 13,
+        "scene_id": "13B",
+        "scene_title": "The Traitor",
+        "locations": [{
+            "location_id": "Rescue_Ship",
+            "sub_locations_id": "deck"
+        }],
+        "on_complete": {
+            "end_game": true
+        },
+        "intro_text": [
+            { "text": "We were pulled aboard the rescue boat. Dom threw his gun into the sea.", "weight": 1 },
+            { "text": "Dom: 'I lost control... it was survival instinct.'", "weight": 1 },
+            { "text": "On the main deck, the crew found a gun in Said's backpack.", "weight": 2 },
+            { "text": "They threw Said overboard. Dom watched. Dead stare.", "weight": 2 },
+            { "text": "The game ended not with a win, but with moral devastation.", "weight": 2 }
+        ]
+        }
+]
+}

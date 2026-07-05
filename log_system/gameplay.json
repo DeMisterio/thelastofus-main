@@ -1,0 +1,20 @@
+{
+    "actions":[
+    {    
+        "Peripetiea" : {
+            "location": ["Init_house", "living_room"],
+            "Command_RAW": "Go to kitchen",
+            "Command_formated": {"action": "go", "destination": "kitchen"},
+            "RTA": "14:35:12",
+            "CID":  [
+            {"health": 75},
+            {"action_speed": 9},
+            {"endurance": 55},
+            {"strength": 70},
+            {"init_items": ["notebook", "pen", "phone"]}
+            ],
+            "Status": {"success":"room exists and in the same location"}
+        }
+        }
+    ]
+}

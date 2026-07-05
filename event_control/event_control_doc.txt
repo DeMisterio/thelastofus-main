@@ -1,0 +1,33 @@
+        The gameplaye mechanics:
+
+
+1) Check for game savings
+2) In no game savings => set the scene 1 
+
+=> Scene render
+
+1) Assign the characters, items, and the location for the scene, checking for only the characters alive
+
+
+=> Gameloop
+
+1) Play the scene text
+2) Start the gameplay for current scene
+
+While on_complete condition is not satisfied:
+
+if yes =>
+
+3) Increment the scene by one
+4) Scene render
+
+if no => 
+
+continue loop like: 
+
+action_control(perform_action)
+
+<=
+
+
+MIGHT BE LEGACY INFO

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>My Text Adventure</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="module">
+        import { initializeGame } from '../event_control/event_control.js';
+        const initGame = async () => {
+            try {
+                await initializeGame();
+            } catch (error) {
+                console.error("Failed to initialize game:", error);
+            }
+        };
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initGame);
+        } else {
+            initGame();
+        }
+    </script>
+</head>
+
+<body>
+    <div id='gridBox'>
+        <div id='output'></div>
+        <div id='cli' contenteditable="true" onkeyup="checkInput(event)"></div>
+    </div>
+
+</body>
+</html>

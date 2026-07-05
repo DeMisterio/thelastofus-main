@@ -1,0 +1,326 @@
+{
+    "characters": [
+      {
+        "character_n": "Tom",
+        "tokens": ["tom"],
+        "character_type": "NPC",
+        "personality": "calm",
+        "verbal_reactions":{
+        "attack":["AAYY! WHAT ARE U DOING!","SOMEONE HELP ME!", "MY GOD!"],
+        "shoot":["Nooo... why... i thought you are f... 'Falls on the groud motionless'"],
+        "warm": ["Thank you"],
+        "cut":["Aaayyy! That hurts! What the hell! ITS SHARPPPP!"],
+        "hunger":["I'm starving... please help me..."],
+        "throw":["Ohh sshit! What the hell is wrong with you?"],
+        "ignite":["AAAYY! I'M BURNING! SOMEONE HELP ME!"],
+        "give":["Thank you so much!"]
+        },
+        "init_parameters": [
+          {"health": 70},
+          {"action_speed": 8},
+          {"endurance": 40},
+          {"strength": 90},
+          {"init_items": ["phone", "bubblegum", "hummer", "Glock-19"]}
+        ]
+      },
+      {
+        "character_n": "Dominic",
+        "tokens": ["dominic"],
+        "character_type": "NPC",
+        "personality": "chaotic",
+        "verbal_reactions": {
+          "attack": ["HAHA! YOU THINK THAT HURTS?", "COME ON, HIT ME AGAIN!"],
+          "shoot": ["NO WAY... THIS IS HOW IT ENDS...?"],
+          "warm": ["Heh, didn’t expect that."],
+          "cut": ["Ouch! That’s sharp! Dont annoy me!"],
+          "hunger": ["I could eat a horse right now!", "Is that all you've got? I'm starving!", "Looks like i a going to starve if you keep this up!"],
+          "throw": ["WHAT THE HELL WAS THAT FOR?!"],
+          "ignite": ["YOU'RE CRAZY! I'M BURNING!"],
+          "give": ["Whoa, thanks! Didn’t expect that."]
+        },
+        "init_parameters": [
+          {"health": 75},
+          {"action_speed": 9},
+          {"endurance": 55},
+          {"strength": 70},
+          {"init_items": ["notebook", "pen", "phone"]}
+        ]
+      },
+      {
+        "character_n": "Alex",
+        "tokens": ["alex"],
+        "character_type": "NPC",
+        "personality": "energetic",
+        "verbal_reactions": {
+          "attack": ["HEY! WATCH IT!", "YO! THAT WAS UNCALLED FOR!"],
+          "shoot": ["I’m hit! I’m hit!"],
+          "warm": ["Nice! Thanks!"],
+          "cut": ["Whoa! That’s sharp! Be careful!"],
+          "hunger": ["I could really go for some food right now, do you have anything?"], 
+          "throw": ["BRO, CHILL!"],
+          "ignite": ["I'M ON FIRE! HELP!"],
+          "give": ["Thanks a lot! Appreciate it!"]
+        },
+        "init_parameters": [
+          {"health": 80},
+          {"action_speed": 10},
+          {"endurance": 60},
+          {"strength": 75},
+          {"init_items": ["phone", "gloves", "mask"]}
+        ]
+      },
+      {
+        "character_n": "Derick",
+        "tokens": ["derick"],
+        "character_type": "NPC",
+        "personality": "thoughtful",
+        "verbal_reactions": {
+          "attack": ["Why would you do that?", "That was unnecessary."],
+          "shoot": ["So this is it..."],
+          "warm": ["I appreciate that."],
+          "cut": ["That’s quite sharp... be careful."],
+          "hunger": ["I’m feeling quite hungry... do you have anything to eat?", "oh my god i am starving..."],
+          "throw": ["Please, stop."],
+          "ignite": ["This pain... is unbearable."],
+          "give": ["Thank you, that means a lot."]
+        },
+        "init_parameters": [
+          {"health": 70},
+          {"action_speed": 7},
+          {"endurance": 55},
+          {"strength": 65},
+          {"init_items": ["notebook", "pen", "tea_box"]}
+        ]
+      },
+      {
+        "character_n": "Said",
+        "tokens": ["said"],
+        "character_type": "NPC",
+        "personality": "realistic",
+        "verbal_reactions": {
+          "attack": ["Bad move.", "You really want trouble?"],
+          "shoot": ["I should’ve seen this coming."],
+          "warm": ["Thanks. Means something."],
+          "cut": ["Careful with that IT HURTS!."],
+          "hunger": ["I could use some food right about now.", "I'm really hungry..."],
+          "throw": ["Careful. Next time won’t end well."],
+          "ignite": ["This is... the end..."],
+          "give": ["Cheers mate"]
+        },
+        "init_parameters": [
+          {"health": 75},
+          {"action_speed": 8},
+          {"endurance": 65},
+          {"strength": 80},
+          {"init_items": ["salad", "fork", "phone"]}
+        ]
+      },
+      {
+        "character_n": "Me",
+        "tokens": ["me"],
+        "character_type": "Player",
+        "personality": "neutral",
+        "verbal_reactions": {
+          "attack": ["Everyone looked me hurting myself.", "Why am I doing this to myself?"],
+          "shoot": ["I’m down... I think i hve deserved this..."],
+          "warm": ["I have warmed my self. Now i feel a way comfy."],
+          "cut": ["I felt the freezing sharpness that was cutting through my skin."],
+          "hunger": ["My stomach is growling. I need to eat something soon.", "I feel weak from hunger.", "I will die if I don't eat soon."],
+          "throw": ["What the hell? I can’t believe I just did that to myself."],
+          "ignite": ["AHH SHIIT! I'M BURNING! SOMEONE HELP ME! I AM SO DUMB!"],
+          "give": ["What the heck am i doing... giving stuff to myself..."]
+        },
+        "init_parameters": [
+          {"health": 80},
+          {"action_speed": 9},
+          {"endurance": 70},
+          {"strength": 85},
+          {"init_items": ["phone", "keys", "notebook"]}
+        ]
+      },
+      {
+        "character_n": "Sara",
+        "tokens": ["sara"],
+        "character_type": "NPC",
+        "personality": "injured",
+        "verbal_reactions": {
+          "attack": ["Please... stop...", "I can’t take this..."],
+          "shoot": ["No... please..."],
+          "warm": ["Thank you... really..."],
+          "cut": ["Aaayyy! That hurts! What the hell! ITS SHARPPPP!"],
+          "hunger": ["I'm starving... please help me..."],
+          "throw": ["Ah! That hurts!"],
+          "ignite": ["I'm burning... help me..."],
+          "give": ["Thank you so much! But i need a help..."]
+        },
+        "init_parameters": [
+          {"health": 40},
+          {"action_speed": 4},
+          {"endurance": 20},
+          {"strength": 15},
+          {"init_items": ["phone", "blood_bandage"]}
+        ]
+      },
+      {
+        "character_n": "Sara_Husband",
+        "tokens": ["sara", "husband"],
+        "character_type": "NPC",
+        "personality": "determined",
+        "verbal_reactions": {
+          "attack": ["You won’t break me.", "Is that all?"],
+          "shoot": ["Not... yet..."],
+          "warm": ["I won’t forget this."],
+          "cut": ["It’s just a scratch, you dumbass.."],
+          "hunger":["Does anyone has a food? i feel sick"],
+          "throw": ["Focus. Stay focused."],
+          "ignite": ["I... will survive... all for my Sara..."],
+          "give":["Wont forget you, buddy.."]
+        },
+        "init_parameters": [
+          {"health": 65},
+          {"action_speed": 7},
+          {"endurance": 55},
+          {"strength": 70},
+          {"init_items": ["pilot_license", "water_bottle", "pocket_knife"]}
+        ]
+      },
+      {
+        "character_n": "Gang_Leader",
+        "tokens": ["gang", "leader"],
+        "character_type": "NPC",
+        "personality": "aggressive",
+        "verbal_reactions": {
+          "attack": ["YOU’RE DEAD!", "BIG MISTAKE!"],
+          "shoot": ["NO— THIS ISN’T OVER!"],
+          "warm": ["Hmph, are you serious?"],
+          "cut":["AHHHH!"],
+          "hunger": null,
+          "throw": ["YOU WANNA DIE?!"],
+          "ignite": ["I’M BURNING! CURSE YOU!"],
+          "give": ["Hah, you must be joking. You can’t just buy your way out of it"]
+        },
+        "init_parameters": [
+          {"health": 90},
+          {"action_speed": 9},
+          {"endurance": 80},
+          {"strength": 95},
+          {"init_items": ["pistol_9mm", "car_keys", "radio"]}
+        ]
+      },
+      {
+        "character_n": "Old_Man",
+        "tokens": ["old", "man"],
+        "character_type": "NPC",
+        "personality": "helpless",
+        "verbal_reactions": {
+          "attack": ["Please... stop...", "I can’t take this..."],
+          "shoot": ["No... please..."],
+          "warm": ["Thank you... really..."],
+          "cut": ["Aaayyy! That hurts! What the hell! ITS SHARPPPP! MY DEAR GOD!"],          
+          "hunger": null,
+          "throw": ["Ah! That hurts!"],
+          "ignite": ["I'm burning... help me... oh my..."],
+          "give": ["I DONT NEED ANYTHING... PLEASE... LEAVE US..."]
+        },
+        "init_parameters": [
+          {"health": 30},
+          {"action_speed": 3},
+          {"endurance": 20},
+          {"strength": 30},
+          {"init_items": ["house_keys", "old_watch"]}
+        ]
+      },
+      {
+        "character_n": "Old_Woman",
+        "tokens": ["old", "woman"],
+        "character_type": "NPC",
+        "personality": "scared",
+        "verbal_reactions": {
+          "attack": ["Please... stop...", "I can’t take this..."],
+          "shoot": ["No... please..."],
+          "warm": ["Thank you... really..."],
+          "cut": ["Aaayyy! That hurts! What the hell! ITS SHARPPPP! DONT TOUCH MY WIFE!"],
+          "hunger": null,
+          "throw": ["Ah! That hurts!"],
+          "ignite": ["I'm burning... help me... oh dear... oh sky..."],
+          "give": ["WHY ARE YOU DOING THIS... PLEASE... LEAVE US..."]
+        },
+        "init_parameters": [
+          {"health": 30},
+          {"action_speed": 3},
+          {"endurance": 20},
+          {"strength": 20},
+          {"init_items": ["knitting_needles"]}
+        ]
+      },
+      {
+        "character_n": "Father_Motorcycle",
+        "tokens": ["father"],
+        "character_type": "NPC",
+        "personality": "protective",
+        "verbal_reactions": {
+          "attack": ["Hey! Watch it!", "You’ll regret that!"],
+          "shoot": ["I’m hit! But I won’t back down! Son, run..."],
+          "warm": ["Thanks, I needed that."],
+          "cut": ["AHH SHIT U, BASTARD! DONT HURT MY CHILD!"],
+          "hunger": null,
+          "throw": ["What the hell is wrong with you?!"],
+          "ignite": ["I'M ON FIRE! BUT I WON'T LET YOU WIN! DONT TOUCH MY CHILD!"],
+          "give":["Thank you"]
+        },
+        "init_parameters": [
+          {"health": 80},
+          {"action_speed": 8},
+          {"endurance": 70},
+          {"strength": 85},
+          {"init_items": ["motorcycle_helmet", "wrench", "map"]}
+        ]
+      },
+      {
+        "character_n": "Child_Motorcycle",
+        "tokens": ["child"],
+        "character_type": "NPC",
+        "personality": "innocent",
+        "verbal_reactions": {
+          "attack": ["Ouch! That hurts!", "Why are you being mean?"],
+          "shoot": ["I'm scared..."],
+          "warm": ["Yay! Thank you!"],
+          "cut":["NOOOO! MOOM! DAD, HELP ME!"],
+          "hunger":null,
+          "throw": ["Hey! That's not nice!"],
+          "ignite": ["It hurts! Please stop! Daddy!"],
+          "give": ["Yay! Thank you! Dad, look what I got!"]
+        },
+        "init_parameters": [
+          {"health": 20},
+          {"action_speed": 5},
+          {"endurance": 30},
+          {"strength": 10},
+          {"init_items": ["toy_car", "small_helmet"]}
+        ]
+      },
+      {
+        "character_n": "Ship_Crew",
+        "tokens": ["ship", "crew"],
+        "character_type": "NPC",
+        "personality": "authoritative",
+        "verbal_reactions": {
+          "attack": ["You dare attack the crew!", "This will not be tolerated!"],
+          "shoot": ["We're under fire! Return fire!"],
+          "warm": ["Appreciate the gesture."],
+          "cut": ["Watch it! That's dangerous! Pay attention!"],
+          "hunger": null,
+          "throw": ["Cease this madness!"],
+          "ignite": ["We're burning! Abandon ship!"],
+          "give": ["Thank you for your support."]
+        },
+        "init_parameters": [
+          {"health": 100},
+          {"action_speed": 9},
+          {"endurance": 90},
+          {"strength": 90},
+          {"init_items": ["assault_rifle", "radio", "life_vest"]}
+        ]
+}
+    ]
+  }

@@ -1,0 +1,920 @@
+version: '3.1'
+nlu:
+- intent: go
+  examples: |
+    - go to [kitchen](target)
+    - walk to the [living room](target)
+    - enter the [bedroom](target)
+    - head towards the [garage](target)
+    - move to the [hallway](target)
+    - run to the [exit](target)
+    - go outside to the [street](target)
+    - proceed to the [basement](target)
+    - step into the [bathroom](target)
+    - go to the [hall](target)
+    - walk into the [balcony](target)
+    - head to the [parking lot](target)
+    - go to the [car](target)
+    - move towards the [door](target)
+    - let me go to the [kitchen](target)
+    - i want to go to the [living room](target)
+    - take me to the [hall](target)
+    - head over to the [exit](target)
+    - go [outside](target)
+    - leave the [house](target)
+    - walk [outside](target)
+    - enter the [shop](target)
+    - go into the [corner shop](target)
+    - walk towards the [playground](target)
+    - run towards the [bus stop](target)
+    - head to the [parking zone](target)
+    - go to the [fence area](target)
+    - move to the [flipped taxi](target)
+    - walk to the [sand playground](target)
+    - step outside
+    - go out
+    - let's leave
+    - head out
+    - leave this place
+    - get out of here
+    - i need to go
+    - let's move
+    - go to the [back storage](target)
+    - enter the [freezer room](target)
+    - walk to the [back exit](target)
+    - head to the [main floor](target)
+    - go to the [shelf rows](target)
+    - move to the [pump area](target)
+    - walk to the [station shop](target)
+    - enter the [storage corner](target)
+    - go to [fire area](target)
+    - move to [water zone](target)
+    - walk to the [car side](target)
+    - go to the [sleep spot](target)
+    - head to the [foggy street](target)
+    - enter the [abandoned houses](target)
+    - go to the [shoreline](target)
+    - walk to the [deck](target)
+    - go to the [rescue boat](target)
+    - head towards [beach shore](target)
+    - walk down the [foggy road](target)
+    - go to the [water edge](target)
+    - i should go to the [hall](target) now
+    - let me head to the [bathroom](target)
+    - can i go to the [balcony](target)
+    - i want to check the [kitchen](target)
+    - lets go to the [living room](target)
+    - move it to [exit](target)
+    - rush to the [car](target)
+    - sprint to the [parking lot](target)
+    - flee to the [street](target)
+    - escape to the [back exit](target)
+    - run to the [bus stop](target) quickly
+    - go back to the [kitchen](target)
+    - return to the [hall](target)
+    - i carefully sneak into the [bedroom](target)
+    - quietly walk into the [living room](target)
+    - dash to the [garage](target)
+    - im gonna go to the [hallway](target)
+    - let's head into the [bathroom](target)
+    - slowly approach the [car](target)
+    - approach the [door](target)
+    - i decide to go to the [kitchen](target)
+    - get the hell out to the [street](target)
+    - run like hell to the [exit](target)
+    - sprint away to the [parking lot](target)
+    - wanna go to the [hall](target)
+    - lemme go into the [basement](target)
+    - plese go to [balcony](target)
+    - walk to [corner shop](target) right now
+    - wander into the [abandoned houses](target)
+    - just go to the [rescue boat](target)
+    - i will navigate to the [shoreline](target)
+    - make my way to the [foggy road](target)
+    - slowly make my way to the [deck](target)
+    - retreat to the [water edge](target)
+    - fall back to the [beach shore](target)
+    - advance to the [fire area](target)
+    - keep walking towards the [water zone](target)
+
+- intent: inspect
+  examples: |
+    - inspect the [room](target)
+    - look at the [box](target)
+    - examine the [corpse](target)
+    - search the [drawer](target)
+    - investigate the [body](target)
+    - check out the [desk](target)
+    - take a closer look at the [map](target)
+    - look closely at [this](target)
+    - inspect the [area](target)
+    - what is in the [cabinet](target)
+    - look around
+    - examine the [table](target)
+    - check the [shelf](target)
+    - search the [fridge](target)
+    - look at the [nightstand](target)
+    - what do i see
+    - describe the [room](target)
+    - inspect the [car](target)
+    - look at the [sofa](target)
+    - examine [it](target)
+    - check what is here
+    - look at my surroundings
+    - search around
+    - search the [wardrobe](target)
+    - examine the [sink](target)
+    - look at the [washing machine](target)
+    - inspect the [microwave](target)
+    - check the [oven](target)
+    - look at the [trash bin](target)
+    - examine the [shoe rack](target)
+    - check the [coat hanger](target)
+    - inspect the [glovebox](target)
+    - search the [trunk](target)
+    - look at the [balcony table](target)
+    - examine the [storage box](target)
+    - check the [plant shelf](target)
+    - what can i see here
+    - look at everything
+    - investigate the [area](target)
+    - what is around me
+    - inspect the [floor](target)
+    - take a look
+    - observe my surroundings
+    - scan the [room](target)
+    - examine the [hallway](target)
+    - look at the [bed](target)
+    - search the [desk](target)
+    - inspect the [shower cabin](target)
+    - check the [toilet](target)
+    - look inside the [cabinet](target)
+    - what is in the [drawer](target)
+    - what the hell is in the [box](target)
+    - i carefully examine the [corpse](target)
+    - i want to search the [fridge](target) for supplies
+    - look deep inside the [wardrobe](target)
+    - peer into the [trash bin](target)
+    - inspect the damn [car](target)
+    - lemme check the [nightstand](target)
+    - wanna see what is in the [microwave](target)
+    - i quickly search the [trunk](target)
+    - scan the [floor](target) for clues
+    - closely observe the [map](target)
+    - let me take a good look at the [bed](target)
+    - what's on the [table](target)?
+    - can you describe the [room](target) again?
+    - tell me what is inside the [safe](target)
+    - look over the [desk](target)
+    - browse through the [drawer](target)
+    - rummage through the [box](target)
+    - search the [glovebox](target) thoroughly
+    - give the [shoe rack](target) a quick look
+    - inspect the area around the [washing machine](target)
+    - what the fuck is that
+    - check around for items
+    - show me my surroundings
+    - give me a description of the area
+
+- intent: pickup
+  examples: |
+    - take the [keys](target)
+    - pick up the [gun](target)
+    - grab the [bottle](target) from the [table](source)
+    - collect the [ammo](target)
+    - pick up the [brick](target) from the [ground](source)
+    - acquire the [map](target)
+    - loot the [medkit](target)
+    - snatch the [shiv](target)
+    - retrieve the [backpack](target)
+    - grab the [knife](target)
+    - take the [passport](target)
+    - pick up the [phone](target)
+    - get the [flashlight](target)
+    - grab the [water bottle](target)
+    - take the [food](target)
+    - pick up the [lighter](target)
+    - grab the [blanket](target) from the [sofa](source)
+    - take the [notebook](target)
+    - pick up the [rope](target)
+    - grab the [screwdriver](target)
+    - take the [hammer](target)
+    - pick up the [gloves](target)
+    - grab the [mask](target)
+    - take the [jacket](target) from the [wardrobe](source)
+    - pick up the [canned beans](target)
+    - grab the [tea box](target)
+    - take the [pen](target)
+    - pick up the [fork](target)
+    - get the [salad](target)
+    - pick the [hunting knife](target) up
+    - take the [razor blades](target)
+    - grab the [matches](target)
+    - pick up the [flare](target)
+    - take the [pilot license](target)
+    - pick up the [pocket knife](target)
+    - i want to take the [keys](target)
+    - let me grab the [gun](target)
+    - i will take the [passport](target)
+    - can i get the [bottle](target)
+    - i need the [knife](target)
+    - i should take the [phone](target)
+    - give me the [flashlight](target)
+    - hand me the [water bottle](target)
+    - let me pick up the [food](target)
+    - i want to get the [lighter](target)
+    - i want to grab the [blanket](target)
+    - let me pick the [map](target) up
+    - take [everything](target) from the [drawer](source)
+    - grab the [bubblegum](target)
+    - take the [radio](target)
+    - pick up the [car keys](target)
+    - quickly snatch the [medkit](target)
+    - i carefully take the [hunting knife](target) from the [table](source)
+    - lemme grab the [ammo](target)
+    - wanna take the [brick](target)
+    - i grab the [shiv](target) and hold it tight
+    - pick up the damn [gun](target)
+    - collect the [canned beans](target) before we leave
+    - scoop up the [flare](target)
+    - grab the [water bottle](target) off the [ground](source)
+    - take the [jacket](target) and put it away
+    - grab the [matches](target) quickly
+    - i pick up the [rope](target) from the floor
+    - retrieve the [passport](target) from the [drawer](source)
+    - grab the [gloves](target)
+    - i snatch the [pocket knife](target) from the [nightstand](source)
+    - collect all the [food](target)
+    - get the [screwdriver](target) out of the [cabinet](source)
+    - i'll take the [lighter](target)
+    - just take the [keys](target)
+    - steal the [map](target)
+
+- intent: attack
+  examples: |
+    - attack the [zombie](target)
+    - hit the [enemy](target) with [bat](tool)
+    - attack him with my [knife](tool)
+    - strike the [infected](target) using the [pipe](tool)
+    - smash the [creature](target) with a [hammer](tool)
+    - use the [machete](tool) to attack the [clicker](target)
+    - swing the [baseball bat](tool) at [him](target)
+    - I want to attack the [man](target)
+    - bash the [runner](target) with [brick](tool)
+    - hurt the [guard](target) using [shiv](tool)
+    - attack the [bloater](target) with [axe](tool)
+    - attack [Tom](target) with [knife](tool)
+    - hit [Alex](target) with the [hammer](tool)
+    - smash [Derick](target) with the [pipe](tool)
+    - attack the [gang leader](target) with [pistol](tool)
+    - hit the [old man](target) with [wrench](tool)
+    - strike [Sara](target) using the [brick](tool)
+    - attack [Dom](target) with the [screwdriver](tool)
+    - fight the [enemy](target) with my [fists](tool)
+    - beat the [man](target) with [hummer](tool)
+    - use [Glock-19](tool) to attack [him](target)
+    - attack the [child](target) with [toy car](tool)
+    - i want to attack [him](target) with [knife](tool)
+    - let me attack [her](target) using the [bat](tool)
+    - hit [him](target) hard with my [hammer](tool)
+    - strike at [Gang Leader](target) with [pipe](tool)
+    - attack with [knife](tool)
+    - use my [weapon](tool) on [him](target)
+    - i aggressively attack the [clicker](target) with my [baseball bat](tool)
+    - smash the [infected](target)'s head with a [brick](tool)
+    - hit the [zombie](target) as hard as i can
+    - i swing my [machete](tool) at [Tom](target)
+    - beat the shit out of [Alex](target) with my [fists](tool)
+    - i lunge forward and attack the [guard](target)
+    - bash [Derick](target) with the [wrench](tool)
+    - use the [pipe](tool) to absolutely destroy the [runner](target)
+    - attack the fucking [bloater](target) with my [axe](tool)
+    - i want to smash [him](target) using the [hammer](tool)
+    - fight [Dom](target)
+    - charge at the [enemy](target) with my [shiv](tool)
+    - brutalize the [gang leader](target) with a [screwdriver](tool)
+    - i hit [her](target) in the face with my [weapon](tool)
+    - strike [Sara](target) down with the [pipe](tool)
+    - let's attack [them](target) right now
+    - run up and hit the [man](target)
+    - beat [him](target) senseless with the [bat](tool)
+    - slam the [brick](tool) into the [zombie](target)
+    - attack!
+
+- intent: cut
+  examples: |
+    - cut the [rope](target)
+    - cut [it](target) with [scissors](tool)
+    - slice the [bread](target) using [knife](tool)
+    - use the [shiv](tool) to cut the [wire](target)
+    - sever the [cable](target)
+    - slash the [net](target) with my [blade](tool)
+    - cut open the [box](target)
+    - cut the [tape](target) using the [glass shard](tool)
+    - tear the [fabric](target) with a [knife](tool)
+    - cut the [document](target) with [knife](tool)
+    - slice [it](target) using the [razor blades](tool)
+    - use [hunting knife](tool) to cut the [bag](target)
+    - cut [Tom](target) with [knife](tool)
+    - slash [him](target) with the [razor blades](tool)
+    - stab [Alex](target) with my [hunting knife](tool)
+    - cut [Sara](target) with [pocket knife](tool)
+    - use [keys](tool) to cut [her](target)
+    - stab the [gang leader](target) with my [knife](tool)
+    - i want to cut [him](target) with [knife](tool)
+    - let me stab [him](target)
+    - cut through the [wire](target) with [knife](tool)
+    - slash the [seat](target) open with [razor blades](tool)
+    - i carefully cut the [rope](target) using my [scissors](tool)
+    - rapidly slice the [bread](target)
+    - stab the fucking [zombie](target) with the [shiv](tool)
+    - cut the [bag](target) wide open with the [hunting knife](tool)
+    - sever the [cable](target) with the [glass shard](tool)
+    - use my [blade](tool) to slash the [net](target)
+    - plunge the [pocket knife](tool) into [Tom](target)
+    - stab [Derick](target) in the neck with the [knife](tool)
+    - i violently stab [Alex](target)
+    - slash [her](target) arms with the [razor blades](tool)
+    - cut the [tape](target) off
+    - rip open the [box](target) by cutting it with a [knife](tool)
+    - i wanna cut the [wire](target)
+    - slice open the [fabric](target)
+    - stab the [enemy](target) with the [keys](tool)
+    - repeatedly stab the [gang leader](target)
+    - use the [shiv](tool) to cut [him](target)
+    - slice [it](target) apart
+
+- intent: shoot
+  examples: |
+    - shoot the [zombie](target)
+    - shoot [him](target) with the [pistol](tool)
+    - fire the [gun](tool) at [target](target)
+    - pull the trigger on the [clicker](target)
+    - use the [rifle](tool) to shoot the [enemy](target)
+    - shoot the [lock](target) with my [revolver](tool)
+    - fire at the [guard](target)
+    - blast the [door](target) with the [shotgun](tool)
+    - aim and shoot the [runner](target)
+    - shoot [Tom](target) with [Glock-19](tool)
+    - fire [pistol_9mm](tool) at [Gang Leader](target)
+    - shoot the [old man](target) with [assault rifle](tool)
+    - shoot at [Alex](target) with my [gun](tool)
+    - fire at [Dom](target)
+    - shoot the [car](target) with [pistol](tool)
+    - use [Glock-19](tool) to shoot [him](target)
+    - i want to shoot [him](target)
+    - let me fire at [her](target)
+    - shoot [Sara](target) with [pistol_9mm](tool)
+    - shoot [Derick](target) with the [gun](tool)
+    - fire my [weapon](tool) at [them](target)
+    - blast [him](target) with [shotgun](tool)
+    - i quickly draw my [pistol](tool) and shoot the [zombie](target)
+    - unload the [assault rifle](tool) into the [bloater](target)
+    - blow the [lock](target) off with my [shotgun](tool)
+    - shoot the damn [clicker](target) in the head
+    - aim carefully and fire the [rifle](tool) at [Tom](target)
+    - blast the [door](target) open
+    - put a bullet in the [guard](target) with the [Glock-19](tool)
+    - i shoot [Alex](target) with my [pistol_9mm](tool)
+    - fire the [gun](tool) straight at the [runner](target)
+    - pop [him](target) with the [revolver](tool)
+    - shoot the [gang leader](target) repeatedly
+    - i want to shoot the [car](target) tires
+    - blast [Derick](target) with the [shotgun](tool)
+    - pull the trigger and shoot [Sara](target)
+    - open fire on the [enemies](target)
+    - use the [weapon](tool) to shoot [them](target)
+    - shoot [it](target) now!
+    - snipe the [old man](target)
+    - fire at will at the [zombie](target)
+
+- intent: ignite
+  examples: |
+    - ignite the [wood](target) with [lighter](tool)
+    - burn the [gasoline](target)
+    - light the [fire](target)
+    - ignite [this](target)
+    - set the [trash](target) on fire using the [matches](tool)
+    - use the [lighter](tool) to burn the [paper](target)
+    - ignite the [molotov](target)
+    - start a fire on the [corpse](target) with [flare](tool)
+    - set fire to the [bushes](target)
+    - light up the [torch](target)
+    - burn the [documents](target) with [lighter](tool)
+    - ignite [Tom](target) with [matches](tool)
+    - set [him](target) on fire
+    - burn [Alex](target) with [flare](tool)
+    - use [lighter](tool) to burn the [box](target)
+    - ignite the [car](target) with [matches](tool)
+    - set fire to the [sofa](target) with [lighter](tool)
+    - burn [everything](target)
+    - light the [campfire](target) using [matches](tool)
+    - i want to burn [it](target)
+    - let me set fire to [this](target)
+    - ignite the [trash pile](target) with my [lighter](tool)
+    - burn the [bag](target) using the [flare](tool)
+    - i flick the [lighter](tool) and ignite the [gasoline](target)
+    - burn the fucking [corpse](target) so it doesn't get up
+    - use the [matches](tool) to light the [wood](target)
+    - set the [bushes](target) ablaze
+    - ignite the [molotov](target) and get ready
+    - burn the [documents](target) to ash
+    - light [Tom](target) on fire with the [flare](tool)
+    - use my [lighter](tool) to burn [Alex](target)
+    - i want to ignite the [car](target)
+    - set the whole [trash pile](target) on fire
+    - burn the [sofa](target) down
+    - start a [fire](target) using the [matches](tool)
+    - torch the [box](target)
+    - light up the [torch](target) with my [lighter](tool)
+    - i'm gonna burn [it](target) all
+    - set [him](target) ablaze
+    - ignite [everything](target)
+    - burn the [paper](target) with the [matches](tool)
+
+- intent: eat
+  examples: |
+    - eat the [bread](target)
+    - eat [stale bread](target)
+    - consume the [food](target)
+    - chew on the [jerky](target)
+    - have a bite of the [apple](target)
+    - eat the [canned beans](target)
+    - swallow the [pills](target)
+    - I want to eat the [ration](target)
+    - eat the [salad](target)
+    - eat [yogurt](target)
+    - consume the [canned food](target)
+    - eat my [sandwich](target)
+    - munch on the [chips](target)
+    - eat the [cereal](target)
+    - devour the [chocolate](target)
+    - have some [food](target)
+    - eat [something](target)
+    - i am hungry let me eat the [bread](target)
+    - i need to eat the [canned beans](target)
+    - let me have the [apple](target)
+    - gobble up the [ration](target)
+    - eat the [stale crackers](target)
+    - consume [it](target)
+    - chew the [gum](target)
+    - eat the [bubblegum](target)
+    - taste the [food](target)
+    - i greedily eat the [canned beans](target)
+    - slowly chew on the [jerky](target)
+    - i'm starving, let me eat the [sandwich](target)
+    - quickly swallow the [pills](target)
+    - munch on the [chips](target) while waiting
+    - devour the entire [apple](target)
+    - i wanna eat the [bread](target)
+    - let's consume the [ration](target) now
+    - eat the [salad](target)
+    - have a quick bite of the [stale crackers](target)
+    - gorge on the [food](target)
+    - i eat the [chocolate](target)
+    - taste the [yogurt](target) to see if it's bad
+    - eat some [canned food](target)
+    - chew the [bubblegum](target)
+    - feed myself the [cereal](target)
+    - i need food, i will eat [it](target)
+    - finish eating the [food](target)
+
+- intent: drink
+  examples: |
+    - drink the [water](target)
+    - drink from the [bottle](target)
+    - sip the [coffee](target)
+    - consume the [soda](target)
+    - gulp down the [juice](target)
+    - drink the [liquid](target)
+    - have some [water](target)
+    - drink the [water bottle](target)
+    - sip from the [cup](target)
+    - drink the [tea](target)
+    - have a drink of [water](target)
+    - chug the [beer](target)
+    - drink from the [canteen](target)
+    - take a sip of [coffee](target)
+    - i need to drink some [water](target)
+    - let me drink the [water bottle](target)
+    - i want to drink [something](target)
+    - pour and drink the [water](target)
+    - drink [it](target)
+    - gulp down [water](target)
+    - i eagerly drink the [water](target) from the [bottle](target)
+    - slowly sip the hot [coffee](target)
+    - chug the entire [soda](target)
+    - i'm thirsty, let me drink the [water bottle](target)
+    - gulp down the [liquid](target)
+    - have a refreshing drink of [juice](target)
+    - drink the [tea](target)
+    - i down the [beer](target)
+    - take a huge gulp from the [canteen](target)
+    - drink the [water](target) quickly
+    - i wanna drink the [soda](target)
+    - consume the [liquid](target)
+    - i need a drink, grab the [bottle](target)
+    - sip the [water](target)
+    - finish drinking the [coffee](target)
+    - drink it all
+
+- intent: give
+  examples: |
+    - give the [gun](target) to [Zack](recipient)
+    - hand the [water](target) over to [him](recipient)
+    - pass the [medkit](target) to [Ellie](recipient)
+    - give [Joel](recipient) the [ammo](target)
+    - transfer the [keys](target) to [Sarah](recipient)
+    - offer the [food](target) to [the man](recipient)
+    - give [Tom](recipient) the [knife](target)
+    - hand the [blanket](target) to [Alex](recipient)
+    - give [Derick](recipient) the [phone](target)
+    - pass [Dom](recipient) the [water bottle](target)
+    - give the [passport](target) to [Sara](recipient)
+    - offer the [food](target) to [old man](recipient)
+    - give the [gun](target) to [gang leader](recipient)
+    - hand [Sara Husband](recipient) the [pilot license](target)
+    - give [him](recipient) the [keys](target)
+    - give [her](recipient) the [blanket](target)
+    - pass [them](recipient) the [food](target)
+    - i want to give [Tom](recipient) the [knife](target)
+    - let me give [Alex](recipient) the [water](target)
+    - hand over my [gun](target) to [Derick](recipient)
+    - share the [food](target) with [Sara](recipient)
+    - offer my [jacket](target) to [old woman](recipient)
+    - i carefully hand the [gun](target) to [Zack](recipient)
+    - toss the [keys](target) to [Sarah](recipient)
+    - give the [medkit](target) to [Ellie](recipient) so she can heal
+    - i pass the [ammo](target) to [Joel](recipient)
+    - offer the [water bottle](target) to [him](recipient)
+    - let's give the [blanket](target) to the [old man](recipient)
+    - hand [Tom](recipient) the [knife](target) quickly
+    - give [Derick](recipient) his [phone](target) back
+    - pass the [food](target) to [Sara](recipient)
+    - i want to give the [passport](target) to [Alex](recipient)
+    - give my [jacket](target) to [her](recipient)
+    - share my [water](target) with [Dom](recipient)
+    - transfer the [pilot license](target) to [Sara Husband](recipient)
+    - give the [gun](target) over to the [gang leader](recipient)
+    - let me hand [them](recipient) the [keys](target)
+    - i yield the [knife](target) to [him](recipient)
+
+- intent: wear
+  examples: |
+    - wear the [mask](target)
+    - put on the [gloves](target)
+    - equip [shoes](target)
+    - wear my [jacket](target)
+    - put the [helmet](target) on
+    - dress in the [armor](target)
+    - put on my [gas mask](target)
+    - wear the [blanket](target)
+    - put on the [coat](target)
+    - equip the [gloves](target)
+    - wear the [motorcycle helmet](target)
+    - put on the [life vest](target)
+    - dress in the [jacket](target)
+    - i want to wear the [mask](target)
+    - let me put on the [gloves](target)
+    - equip my [helmet](target)
+    - i should wear the [jacket](target)
+    - put on [warm clothes](target)
+    - dress [Tom](recipient) in the [blanket](target)
+    - put the [jacket](target) on [Alex](recipient)
+    - i quickly slip on the [jacket](target)
+    - carefully put the [gas mask](target) over my face
+    - wear the heavy [armor](target)
+    - equip the [helmet](target) for protection
+    - wrap the [blanket](target) around myself
+    - slide the [gloves](target) onto my hands
+    - i want to put on my [coat](target)
+    - wear the [shoes](target)
+    - dress [myself](target) in the [warm clothes](target)
+    - put the [life vest](target) on immediately
+    - equip the [mask](target)
+    - throw the [jacket](target) over [Tom](recipient)
+    - help [Alex](recipient) wear the [blanket](target)
+    - i need to wear the [motorcycle helmet](target)
+    - put [it](target) on
+    - equip [it](target)
+
+- intent: unlock
+  examples: |
+    - unlock the [door](target)
+    - open the [safe](target) with [keys](tool)
+    - unlock the [glovebox](target)
+    - use the [key](tool) to unlock the [gate](target)
+    - pick the lock on the [door](target) with [shiv](tool)
+    - unlock the [chest](target)
+    - unlatch the [window](target)
+    - open the [padlock](target) using [keys](tool)
+    - unlock the [car](target) with [car keys](tool)
+    - use [house keys](tool) to unlock the [door](target)
+    - unlock [it](target) with my [keys](tool)
+    - i want to unlock the [door](target)
+    - let me unlock the [gate](target) with [keys](tool)
+    - open the [lock](target) using the [key](tool)
+    - unlock the [trunk](target) with [car keys](tool)
+    - i slowly unlock the [safe](target) using the [keys](tool)
+    - use the [shiv](tool) to pick the lock on the [door](target)
+    - insert the [car keys](tool) and unlock the [car](target)
+    - unlatch the [window](target) carefully
+    - pop the [trunk](target) open using the [key](tool)
+    - open the damn [padlock](target) with the [keys](tool)
+    - i want to unlock the [glovebox](target)
+    - unlock the [chest](target)
+    - let me use the [house keys](tool) to unlock the [front door](target)
+    - crack the [safe](target) open
+    - break the lock on the [gate](target)
+    - unlock [it](target)
+    - try to open the [lock](target)
+    - use my [keys](tool) on the [door](target)
+
+- intent: sit
+  examples: |
+    - sit down
+    - sit on the [chair](target)
+    - rest on the [sofa](target)
+    - take a seat on the [bench](target)
+    - sit upon the [floor](target)
+    - I will sit on the [bed](target)
+    - sit and rest
+    - take a break
+    - rest for a moment
+    - i need to sit down
+    - let me rest
+    - sit on the [ground](target)
+    - rest on the [car seat](target)
+    - sit on the [back seat](target)
+    - take a seat
+    - i want to rest
+    - sit and think
+    - rest my legs
+    - let me sit for a moment
+    - i need a break
+    - i exhausted, i will sit on the [sofa](target)
+    - collapse onto the [bed](target)
+    - just sit down on the [floor](target)
+    - let's rest on the [bench](target)
+    - take a seat on the [chair](target)
+    - i sit on the [ground](target) to catch my breath
+    - relax on the [car seat](target)
+    - sit quietly on the [back seat](target)
+    - take a quick break
+    - i really need to rest my legs
+    - sit down and wait
+    - settle down on the [sofa](target)
+    - plop down on the [bed](target)
+    - sit here
+    - rest here for a bit
+
+- intent: punch
+  examples: |
+    - punch the [man](target)
+    - hit [him](target)
+    - strike the [enemy](target)
+    - throw a punch at the [guard](target)
+    - beat up the [zombie](target)
+    - slug the [runner](target)
+    - punch [it](target) in the face
+    - punch [Tom](target)
+    - hit [Alex](target)
+    - punch [Derick](target) in the face
+    - strike [Dom](target)
+    - punch the [gang leader](target)
+    - beat [Sara Husband](target)
+    - slap [him](target)
+    - i want to punch [him](target)
+    - let me hit [her](target)
+    - punch [old man](target)
+    - smack [him](target) in the face
+    - kick [him](target)
+    - i will punch [Alex](target)
+    - i clench my fist and punch the [zombie](target)
+    - throw a heavy punch at [Tom](target)
+    - hit the [guard](target) square in the jaw
+    - slug the [runner](target) as hard as i can
+    - beat up the [enemy](target) with my bare hands
+    - punch the [gang leader](target) right in the face
+    - i slap [Derick](target)
+    - smack the [old man](target)
+    - strike [Dom](target) with my fist
+    - kick the [man](target)
+    - i want to hit [Alex](target)
+    - just punch [him](target)
+    - beat [Sara Husband](target) down
+    - hit [it](target)
+    - punch [her](target)
+
+- intent: throw
+  examples: |
+    - throw the [lighter](tool) at the [fence](target)
+    - toss the [dead woman](target)
+    - throw [it](target)
+    - hurl the [brick](tool) at the [window](target)
+    - lob the [grenade](tool) towards the [enemies](target)
+    - chuck the [bottle](tool) at the [clicker](target)
+    - throw the [rock](tool) to distract them
+    - throw the [keys](target) away
+    - toss the [phone](target)
+    - throw the [knife](target)
+    - hurl the [notebook](target) at [him](target)
+    - throw [it](target) away
+    - chuck the [bottle](target) at the wall
+    - toss [everything](target) out
+    - i want to throw the [gun](target)
+    - let me throw the [brick](target)
+    - throw the [food](target) at [Tom](target)
+    - toss the [keys](target) to [Alex](target)
+    - i grab the [brick](tool) and hurl it at the [window](target)
+    - toss the empty [bottle](tool) to distract the [clicker](target)
+    - aggressively throw the [lighter](tool) at the [fence](target)
+    - chuck the [rock](tool) far away
+    - lob the [grenade](tool) into the group of [enemies](target)
+    - throw my [gun](target) away in frustration
+    - toss the [keys](target) over to [Alex](target)
+    - hurl the [food](target) at [Tom](target)
+    - throw the [knife](target) at [him](target)
+    - i throw the [phone](target) on the ground
+    - let me toss [it](target)
+    - chunk the [notebook](target) across the room
+    - throw [everything](target)
+    - i wanna throw the [bottle](target)
+
+- intent: open
+  examples: |
+    - open the [drawer](target)
+    - open the [fridge](target)
+    - open the [door](target)
+    - unseal the [box](target)
+    - pull open the [cabinet](target)
+    - open up the [trunk](target)
+    - look inside the [bag](target)
+    - pry open the [crate](target)
+    - open the [glovebox](target)
+    - open the [wardrobe](target)
+    - open the [nightstand](target)
+    - open the [microwave](target)
+    - open the [oven](target)
+    - open the [washing machine](target)
+    - open the [safe](target)
+    - open the [backpack](target)
+    - open the [storage box](target)
+    - i want to open the [drawer](target)
+    - let me open the [fridge](target)
+    - can i open the [cabinet](target)
+    - open up the [chest](target)
+    - pry the [box](target) open
+    - crack open the [crate](target)
+    - i carefully open the [creaky door](target)
+    - pull the [drawer](target) open to look inside
+    - swing the [fridge](target) door open
+    - pry the [crate](target) open with my hands
+    - open up the [trunk](target) of the car
+    - unzip and open the [backpack](target)
+    - look inside the [glovebox](target)
+    - i open the [wardrobe](target)
+    - pull open the [nightstand](target)
+    - open the [microwave](target) door
+    - let me crack open the [safe](target)
+    - open the [washing machine](target)
+    - open the [oven](target)
+    - unseal the [box](target)
+    - i wanna open the [cabinet](target)
+    - pop open the [storage box](target)
+    - open [it](target)
+
+- intent: put
+  examples: |
+    - put the [gun](target) on the [table](destination)
+    - place the [bottle](target) there
+    - set the [box](target) down on the [floor](destination)
+    - put the [keys](target) onto the [desk](destination)
+    - drop the [bag](target) near the [door](destination)
+    - leave the [note](target) on the [fridge](destination)
+    - put the [knife](target) in the [drawer](destination)
+    - place the [food](target) on the [shelf](destination)
+    - put the [phone](target) on the [table](destination)
+    - drop the [gun](target) on the [floor](destination)
+    - set the [blanket](target) on the [sofa](destination)
+    - put the [passport](target) in the [backpack](destination)
+    - i want to put the [keys](target) on the [desk](destination)
+    - let me place the [gun](target) on the [table](destination)
+    - i gently place the [gun](target) onto the [table](destination)
+    - set the heavy [box](target) down on the [floor](destination)
+    - drop the [bag](target) right by the [door](destination)
+    - put the [knife](target) away in the [drawer](destination)
+    - place the [food](target) up on the [shelf](destination)
+    - leave the [keys](target) on the [desk](destination)
+    - put the [phone](target) down on the [table](destination)
+    - toss the [blanket](target) onto the [sofa](destination)
+    - slip the [passport](target) into the [backpack](destination)
+    - put the [bottle](target) over there
+    - i drop my [gun](target) on the [floor](destination)
+    - set the [note](target) on the [fridge](destination)
+    - put [it](target) down
+    - place [it](target) on the [desk](destination)
+
+- intent: store_items
+  examples: |
+    - put the [keys](target) in the [box](destination)
+    - store [food](target) in the [fridge](destination)
+    - place the [gun](target) inside the [safe](destination)
+    - stash the [ammo](target) in my [backpack](destination)
+    - hide the [knife](target) in the [drawer](destination)
+    - keep the [medkit](target) in the [cabinet](destination)
+    - store the [water](target) in the [car](destination)
+    - put away the [phone](target) in the [glovebox](destination)
+    - stash the [passport](target) in my [bag](destination)
+    - hide the [gun](target) under the [bed](destination)
+    - safely store the [food](target) in the [fridge](destination)
+    - stash all my [ammo](target) inside the [backpack](destination)
+    - hide the [gun](target) securely inside the [safe](destination)
+    - put the [keys](target) away in the [box](destination)
+    - keep the [medkit](target) hidden in the [cabinet](destination)
+    - store the extra [water](target) in the [car](destination)
+    - tuck the [knife](target) away in the [drawer](destination)
+    - hide the [passport](target) in the [bag](destination)
+    - stash the [phone](target) in the [glovebox](destination)
+    - put the [gun](target) under the [bed](destination) for later
+    - store [it](target) in the [fridge](destination)
+    - stash [it](target)
+
+- intent: hook
+  examples: |
+    - hook the [keys](target)
+    - pull the [bag](target) with [hook](tool)
+    - grab the [ladder](target) using the [pole](tool)
+    - use the [rope](tool) to hook the [crate](target)
+    - catch the [item](target) with my [hook](tool)
+    - drag the [box](target) closer with the [stick](tool)
+    - hook onto the [ledge](target) with [rope](tool)
+    - pull the [car](target) with [chain](tool)
+    - i want to hook the [keys](target)
+    - use [rope](tool) to catch the [bag](target)
+    - i carefully hook the distant [keys](target)
+    - use the [hook](tool) to pull the [bag](target) towards me
+    - grab onto the [ladder](target) using the long [pole](tool)
+    - hook the [crate](target) with the [rope](tool)
+    - drag the heavy [box](target) with the [stick](tool)
+    - throw the [rope](tool) to hook the [ledge](target)
+    - pull the [car](target) using the [chain](tool)
+    - catch [it](target) with the [hook](tool)
+    - hook the [item](target)
+    - i wanna pull the [bag](target) with my [rope](tool)
+
+- intent: warm
+  examples: |
+    - warm [Zack](target) with the [blanket](tool)
+    - warm [myself](target)
+    - get warm
+    - heat up the [food](target) using the [fire](tool)
+    - keep [her](target) warm with a [jacket](tool)
+    - warm up near the [heater](tool)
+    - warm [Tom](target) with [blanket](tool)
+    - warm [Alex](target) using the [jacket](tool)
+    - warm myself with the [blanket](tool)
+    - huddle for warmth
+    - i need to warm up
+    - let me warm [him](target) with the [blanket](tool)
+    - keep warm by the [fire](tool)
+    - warm up by the [campfire](tool)
+    - wrap the [blanket](tool) around [Zack](target) to warm him
+    - i huddle near the [heater](tool) to warm myself
+    - heat up the cold [food](target) over the [fire](tool)
+    - use my [jacket](tool) to keep [her](target) warm
+    - warm [Tom](target) up using the [blanket](tool)
+    - get close to the [campfire](tool) to keep warm
+    - warm [Alex](target) with the extra [jacket](tool)
+    - i really need to get warm
+    - let's huddle for warmth
+    - warm [him](target) with the [blanket](tool)
+    - warm [it](target) up
+
+- intent: signal
+  examples: |
+    - signal for help
+    - send a signal
+    - wave my hands to signal
+    - use the flare to signal
+    - make a signal gesture
+    - signal the [ship](target)
+    - send a distress signal
+    - wave for help
+    - signal the [rescue boat](target)
+    - fire the [flare](tool) to signal
+    - use the [radio](tool) to signal
+    - call for help
+    - wave at the [ship](target)
+    - i want to signal for help
+    - let me signal the [boat](target)
+    - frantically wave my hands to signal for help
+    - shoot the [flare](tool) into the sky to signal
+    - use the [radio](tool) to send a distress signal
+    - signal the passing [ship](target)
+    - i jump and wave at the [rescue boat](target)
+    - call for help loudly
+    - signal [them](target)
+    - fire the [flare](tool) now
+    - make a huge signal
+    - wave at the [ship](target) with my jacket
