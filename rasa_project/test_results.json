@@ -1,0 +1,1539 @@
+{
+    "go": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "gotta sneak towards the door",
+                "predicted_intent": "go",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "door"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully rush to the door carefully",
+                "predicted_intent": "go",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "door"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly rush towards the street",
+                "predicted_intent": "go",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "street"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully rush towards the hallway",
+                "predicted_intent": "go",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "hallway"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me escape towards the balcony",
+                "predicted_intent": "go",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "balcony"
+                    }
+                ]
+            }
+        ]
+    },
+    "inspect": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "just what is in the box",
+                "predicted_intent": "inspect",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "box"
+                    }
+                ]
+            },
+            {
+                "phrase": "quickly examine the box",
+                "predicted_intent": "inspect",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "box"
+                    }
+                ]
+            },
+            {
+                "phrase": "lemme what is in the drawer",
+                "predicted_intent": "inspect",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "drawer"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully check out the room quietly",
+                "predicted_intent": "inspect",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "room"
+                    }
+                ]
+            },
+            {
+                "phrase": "gotta search the box please",
+                "predicted_intent": "inspect",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "box"
+                    }
+                ]
+            }
+        ]
+    },
+    "pickup": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "carefully steal the brick from the wardrobe",
+                "predicted_intent": "pickup",
+                "confidence": 0.9999955892562866,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "brick"
+                    },
+                    {
+                        "entity": "source",
+                        "value": "wardrobe"
+                    }
+                ]
+            },
+            {
+                "phrase": "gotta scoop up the brick from the floor",
+                "predicted_intent": "pickup",
+                "confidence": 0.9999988079071045,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "brick"
+                    },
+                    {
+                        "entity": "target",
+                        "value": "floor"
+                    }
+                ]
+            },
+            {
+                "phrase": "aggressively scoop up the medkit from the table",
+                "predicted_intent": "pickup",
+                "confidence": 0.999985933303833,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "medkit"
+                    },
+                    {
+                        "entity": "source",
+                        "value": "table"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me pick up the backpack from the floor",
+                "predicted_intent": "pickup",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "backpack"
+                    }
+                ]
+            },
+            {
+                "phrase": "wanna snatch the bottle right now",
+                "predicted_intent": "pickup",
+                "confidence": 0.9999892711639404,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bottle"
+                    }
+                ]
+            }
+        ]
+    },
+    "attack": {
+        "correct": 9,
+        "failed": 1,
+        "failed_phrases": [
+            {
+                "phrase": "just beat the zombie immediately",
+                "predicted": "punch",
+                "confidence": 0.7320883870124817
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "i want to bash the bloater asap",
+                "predicted_intent": "attack",
+                "confidence": 0.7685715556144714,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bloater"
+                    }
+                ]
+            },
+            {
+                "phrase": "lemme bash the enemy with my knife",
+                "predicted_intent": "attack",
+                "confidence": 0.9848648309707642,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "enemy"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "knife"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to destroy the runner immediately",
+                "predicted_intent": "attack",
+                "confidence": 0.9462639093399048,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "runner"
+                    }
+                ]
+            },
+            {
+                "phrase": "just strike the enemy with my bat",
+                "predicted_intent": "attack",
+                "confidence": 0.9964030981063843,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "enemy"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "bat"
+                    }
+                ]
+            },
+            {
+                "phrase": "aggressively hit the bloater right now",
+                "predicted_intent": "attack",
+                "confidence": 0.9493117928504944,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bloater"
+                    }
+                ]
+            }
+        ]
+    },
+    "cut": {
+        "correct": 9,
+        "failed": 1,
+        "failed_phrases": [
+            {
+                "phrase": "let me tear the bag asap",
+                "predicted": "wear",
+                "confidence": 0.2985668480396271
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "let me stab the cable using the knife",
+                "predicted_intent": "cut",
+                "confidence": 0.9996445178985596,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "cable"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "knife"
+                    }
+                ]
+            },
+            {
+                "phrase": "quickly sever the cable using the razor blades",
+                "predicted_intent": "cut",
+                "confidence": 0.9986525774002075,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "cable"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "razor blades"
+                    }
+                ]
+            },
+            {
+                "phrase": "cut the box hurry",
+                "predicted_intent": "cut",
+                "confidence": 0.9954347014427185,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "box"
+                    }
+                ]
+            },
+            {
+                "phrase": "wanna tear the fabric using the razor blades",
+                "predicted_intent": "cut",
+                "confidence": 0.9986090064048767,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "fabric"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "razor blades"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me rip open the tape using the scissors",
+                "predicted_intent": "cut",
+                "confidence": 0.9221997857093811,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "tape"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "scissors"
+                    }
+                ]
+            }
+        ]
+    },
+    "shoot": {
+        "correct": 9,
+        "failed": 1,
+        "failed_phrases": [
+            {
+                "phrase": "aggressively blast the zombie with the weapon",
+                "predicted": "attack",
+                "confidence": 0.8559796810150146
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "wanna blast the guard asap",
+                "predicted_intent": "shoot",
+                "confidence": 0.9929428696632385,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "guard"
+                    }
+                ]
+            },
+            {
+                "phrase": "aggressively blast the zombie with the weapon",
+                "predicted_intent": "attack",
+                "confidence": 0.8559796810150146,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "zombie"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "weapon"
+                    }
+                ]
+            },
+            {
+                "phrase": "wanna shoot the car please",
+                "predicted_intent": "shoot",
+                "confidence": 0.9998656511306763,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "car"
+                    }
+                ]
+            },
+            {
+                "phrase": "just fire at the runner with the revolver",
+                "predicted_intent": "shoot",
+                "confidence": 0.9998897314071655,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "runner"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "revolver"
+                    }
+                ]
+            },
+            {
+                "phrase": "please fire at the clicker with the pistol",
+                "predicted_intent": "shoot",
+                "confidence": 0.9960404634475708,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "clicker"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "pistol"
+                    }
+                ]
+            }
+        ]
+    },
+    "ignite": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "please burn the trash using matches",
+                "predicted_intent": "ignite",
+                "confidence": 0.9998112320899963,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "trash"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "matches"
+                    }
+                ]
+            },
+            {
+                "phrase": "please ignite the bushes right now",
+                "predicted_intent": "ignite",
+                "confidence": 0.9977422952651978,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bushes"
+                    }
+                ]
+            },
+            {
+                "phrase": "set fire to the trash using torch",
+                "predicted_intent": "ignite",
+                "confidence": 0.9994829893112183,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "trash"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "torch"
+                    }
+                ]
+            },
+            {
+                "phrase": "please light the car using flare",
+                "predicted_intent": "ignite",
+                "confidence": 0.9899246692657471,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "car"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "flare"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully set fire to the paper quietly",
+                "predicted_intent": "ignite",
+                "confidence": 0.9806213974952698,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "paper"
+                    }
+                ]
+            }
+        ]
+    },
+    "eat": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "wanna have a bite of the ration",
+                "predicted_intent": "eat",
+                "confidence": 0.9967897534370422,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "ration"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly have a bite of the pills",
+                "predicted_intent": "eat",
+                "confidence": 0.9922393560409546,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "pills"
+                    }
+                ]
+            },
+            {
+                "phrase": "please have a bite of the pills",
+                "predicted_intent": "eat",
+                "confidence": 0.9947109222412109,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "pills"
+                    }
+                ]
+            },
+            {
+                "phrase": "lemme have a bite of the apple",
+                "predicted_intent": "eat",
+                "confidence": 0.9991254210472107,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "apple"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me devour the food right now",
+                "predicted_intent": "eat",
+                "confidence": 0.9871782064437866,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "food"
+                    }
+                ]
+            }
+        ]
+    },
+    "drink": {
+        "correct": 7,
+        "failed": 3,
+        "failed_phrases": [
+            {
+                "phrase": "please taste the juice carefully",
+                "predicted": "eat",
+                "confidence": 0.9507521390914917
+            },
+            {
+                "phrase": "slowly down the canteen hurry",
+                "predicted": "throw",
+                "confidence": 0.4309520721435547
+            },
+            {
+                "phrase": "lemme take a sip of the tea",
+                "predicted": "pickup",
+                "confidence": 0.4484059512615204
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "carefully take a sip of the beer",
+                "predicted_intent": "drink",
+                "confidence": 0.9966975450515747,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "beer"
+                    }
+                ]
+            },
+            {
+                "phrase": "please taste the juice carefully",
+                "predicted_intent": "eat",
+                "confidence": 0.9507521390914917,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "juice"
+                    }
+                ]
+            },
+            {
+                "phrase": "wanna take a sip of the juice",
+                "predicted_intent": "drink",
+                "confidence": 0.9773484468460083,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "juice"
+                    }
+                ]
+            },
+            {
+                "phrase": "just take a sip of the tea",
+                "predicted_intent": "drink",
+                "confidence": 0.9236822724342346,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "tea"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly down the canteen hurry",
+                "predicted_intent": "throw",
+                "confidence": 0.4309520721435547,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "canteen"
+                    }
+                ]
+            }
+        ]
+    },
+    "give": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "let me hand the keys to Sarah carefully",
+                "predicted_intent": "give",
+                "confidence": 0.9998014569282532,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "keys"
+                    },
+                    {
+                        "entity": "recipient",
+                        "value": "Sarah"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly pass Ellie the blanket",
+                "predicted_intent": "give",
+                "confidence": 0.995653510093689,
+                "entities_extracted": [
+                    {
+                        "entity": "recipient",
+                        "value": "Ellie"
+                    },
+                    {
+                        "entity": "target",
+                        "value": "blanket"
+                    }
+                ]
+            },
+            {
+                "phrase": "aggressively offer Zack the blanket",
+                "predicted_intent": "give",
+                "confidence": 0.9301201105117798,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "Zack"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "blanket"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me give Zack the ammo",
+                "predicted_intent": "give",
+                "confidence": 0.9983060359954834,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "Zack"
+                    },
+                    {
+                        "entity": "target",
+                        "value": "ammo"
+                    }
+                ]
+            },
+            {
+                "phrase": "just pass the water to the man asap",
+                "predicted_intent": "give",
+                "confidence": 0.9721845388412476,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "water"
+                    },
+                    {
+                        "entity": "recipient",
+                        "value": "man"
+                    }
+                ]
+            }
+        ]
+    },
+    "wear": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "lemme put the mask on",
+                "predicted_intent": "wear",
+                "confidence": 0.9911580681800842,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "mask"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to put the armor on",
+                "predicted_intent": "wear",
+                "confidence": 0.9928324222564697,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "armor"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to put the gas mask on",
+                "predicted_intent": "wear",
+                "confidence": 0.9975377321243286,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "gas mask"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to slip on the coat asap",
+                "predicted_intent": "wear",
+                "confidence": 0.9970671534538269,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "coat"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully wear the coat asap",
+                "predicted_intent": "wear",
+                "confidence": 0.9998027682304382,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "coat"
+                    }
+                ]
+            }
+        ]
+    },
+    "unlock": {
+        "correct": 7,
+        "failed": 3,
+        "failed_phrases": [
+            {
+                "phrase": "open the gate immediately",
+                "predicted": "open",
+                "confidence": 0.9817495346069336
+            },
+            {
+                "phrase": "lemme open the gate",
+                "predicted": "open",
+                "confidence": 0.997383177280426
+            },
+            {
+                "phrase": "let me open the safe carefully",
+                "predicted": "open",
+                "confidence": 0.9886704683303833
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "open the gate immediately",
+                "predicted_intent": "open",
+                "confidence": 0.9817495346069336,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "gate"
+                    }
+                ]
+            },
+            {
+                "phrase": "open the gate with my keys",
+                "predicted_intent": "unlock",
+                "confidence": 0.8130203485488892,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "gate"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "keys"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to pick the lock on the car with my house keys",
+                "predicted_intent": "unlock",
+                "confidence": 0.9926472902297974,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "car"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "house keys"
+                    }
+                ]
+            },
+            {
+                "phrase": "gotta unlock the safe quietly",
+                "predicted_intent": "unlock",
+                "confidence": 0.9967269897460938,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "safe"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully pick the lock on the door immediately",
+                "predicted_intent": "unlock",
+                "confidence": 0.9802222847938538,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "door"
+                    }
+                ]
+            }
+        ]
+    },
+    "sit": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "i want to settle down on the floor hurry",
+                "predicted_intent": "sit",
+                "confidence": 0.9956461787223816,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "floor"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully rest on the floor now",
+                "predicted_intent": "sit",
+                "confidence": 0.9966517090797424,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "floor"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me rest down",
+                "predicted_intent": "sit",
+                "confidence": 0.9995840191841125,
+                "entities_extracted": []
+            },
+            {
+                "phrase": "wanna rest on the bed immediately",
+                "predicted_intent": "sit",
+                "confidence": 0.9928642511367798,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bed"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to collapse down",
+                "predicted_intent": "sit",
+                "confidence": 0.9978095889091492,
+                "entities_extracted": []
+            }
+        ]
+    },
+    "punch": {
+        "correct": 8,
+        "failed": 2,
+        "failed_phrases": [
+            {
+                "phrase": "gotta strike zombie in the face",
+                "predicted": "attack",
+                "confidence": 0.8238045573234558
+            },
+            {
+                "phrase": "i want to hit the man hurry",
+                "predicted": "attack",
+                "confidence": 0.9563320279121399
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "i want to kick Tom in the face",
+                "predicted_intent": "punch",
+                "confidence": 0.9736297726631165,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "Tom"
+                    }
+                ]
+            },
+            {
+                "phrase": "gotta strike zombie in the face",
+                "predicted_intent": "attack",
+                "confidence": 0.8238045573234558,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "zombie"
+                    }
+                ]
+            },
+            {
+                "phrase": "smack the gang leader carefully",
+                "predicted_intent": "punch",
+                "confidence": 0.9971781969070435,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "gang leader"
+                    }
+                ]
+            },
+            {
+                "phrase": "hit the Tom immediately",
+                "predicted_intent": "punch",
+                "confidence": 0.32329031825065613,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "Tom"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to hit the man hurry",
+                "predicted_intent": "attack",
+                "confidence": 0.9563320279121399,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "man"
+                    }
+                ]
+            }
+        ]
+    },
+    "throw": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "gotta throw the lighter at the enemies",
+                "predicted_intent": "throw",
+                "confidence": 0.9844963550567627,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "lighter"
+                    },
+                    {
+                        "entity": "target",
+                        "value": "enemies"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to toss the dead woman please",
+                "predicted_intent": "throw",
+                "confidence": 0.9938071370124817,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "dead woman"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully toss the grenade now",
+                "predicted_intent": "throw",
+                "confidence": 0.9975403547286987,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "grenade"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly throw the gun at the fence",
+                "predicted_intent": "throw",
+                "confidence": 0.996635377407074,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "gun"
+                    },
+                    {
+                        "entity": "target",
+                        "value": "fence"
+                    }
+                ]
+            },
+            {
+                "phrase": "aggressively chuck the keys asap",
+                "predicted_intent": "throw",
+                "confidence": 0.9912043213844299,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "keys"
+                    }
+                ]
+            }
+        ]
+    },
+    "open": {
+        "correct": 5,
+        "failed": 5,
+        "failed_phrases": [
+            {
+                "phrase": "lemme look inside the drawer",
+                "predicted": "inspect",
+                "confidence": 1.0
+            },
+            {
+                "phrase": "slowly look inside the cabinet",
+                "predicted": "inspect",
+                "confidence": 1.0
+            },
+            {
+                "phrase": "quickly look inside the cabinet",
+                "predicted": "inspect",
+                "confidence": 1.0
+            },
+            {
+                "phrase": "i want to look inside the fridge",
+                "predicted": "inspect",
+                "confidence": 0.8138303756713867
+            },
+            {
+                "phrase": "aggressively look inside the trunk",
+                "predicted": "inspect",
+                "confidence": 0.9972414970397949
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "lemme look inside the drawer",
+                "predicted_intent": "inspect",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "drawer"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly look inside the cabinet",
+                "predicted_intent": "inspect",
+                "confidence": 1.0,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "cabinet"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me look inside the glovebox",
+                "predicted_intent": "open",
+                "confidence": 0.9960979223251343,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "glovebox"
+                    }
+                ]
+            },
+            {
+                "phrase": "quickly pull open the bag please",
+                "predicted_intent": "open",
+                "confidence": 0.80286705493927,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bag"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to pop open the cabinet right now",
+                "predicted_intent": "open",
+                "confidence": 0.9614046216011047,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "cabinet"
+                    }
+                ]
+            }
+        ]
+    },
+    "put": {
+        "correct": 7,
+        "failed": 3,
+        "failed_phrases": [
+            {
+                "phrase": "slowly toss the gun down",
+                "predicted": "throw",
+                "confidence": 0.97084641456604
+            },
+            {
+                "phrase": "slowly toss the knife on the floor please",
+                "predicted": "throw",
+                "confidence": 0.696855902671814
+            },
+            {
+                "phrase": "just set the box on the door hurry",
+                "predicted": "store_items",
+                "confidence": 0.1948244869709015
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "let me put the blanket down",
+                "predicted_intent": "put",
+                "confidence": 0.7082611322402954,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "blanket"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly toss the gun down",
+                "predicted_intent": "throw",
+                "confidence": 0.97084641456604,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "gun"
+                    }
+                ]
+            },
+            {
+                "phrase": "aggressively leave the note down",
+                "predicted_intent": "put",
+                "confidence": 0.8250692486763,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "note"
+                    }
+                ]
+            },
+            {
+                "phrase": "just set the bottle on the fridge hurry",
+                "predicted_intent": "put",
+                "confidence": 0.5395458936691284,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bottle"
+                    },
+                    {
+                        "entity": "destination",
+                        "value": "fridge"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly toss the knife on the floor please",
+                "predicted_intent": "throw",
+                "confidence": 0.696855902671814,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "knife"
+                    }
+                ]
+            }
+        ]
+    },
+    "store_items": {
+        "correct": 9,
+        "failed": 1,
+        "failed_phrases": [
+            {
+                "phrase": "carefully put the food away",
+                "predicted": "put",
+                "confidence": 0.44951072335243225
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "carefully put the food away",
+                "predicted_intent": "put",
+                "confidence": 0.44951072335243225,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "food"
+                    }
+                ]
+            },
+            {
+                "phrase": "please stash the water away",
+                "predicted_intent": "store_items",
+                "confidence": 0.9947637319564819,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "water"
+                    }
+                ]
+            },
+            {
+                "phrase": "keep the food in the drawer asap",
+                "predicted_intent": "store_items",
+                "confidence": 0.8732728958129883,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "food"
+                    },
+                    {
+                        "entity": "destination",
+                        "value": "drawer"
+                    }
+                ]
+            },
+            {
+                "phrase": "just store the ammo away",
+                "predicted_intent": "store_items",
+                "confidence": 0.9725358486175537,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "ammo"
+                    }
+                ]
+            },
+            {
+                "phrase": "carefully tuck the passport away",
+                "predicted_intent": "store_items",
+                "confidence": 0.9841773509979248,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "passport"
+                    }
+                ]
+            }
+        ]
+    },
+    "hook": {
+        "correct": 8,
+        "failed": 2,
+        "failed_phrases": [
+            {
+                "phrase": "quickly grab the car now",
+                "predicted": "pickup",
+                "confidence": 0.9999992847442627
+            },
+            {
+                "phrase": "just grab the bag please",
+                "predicted": "pickup",
+                "confidence": 0.9999489784240723
+            }
+        ],
+        "samples": [
+            {
+                "phrase": "just drag the ladder using the rope",
+                "predicted_intent": "hook",
+                "confidence": 0.9896863102912903,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "ladder"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "rope"
+                    }
+                ]
+            },
+            {
+                "phrase": "aggressively drag the crate using the hook",
+                "predicted_intent": "hook",
+                "confidence": 0.962007462978363,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "crate"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "hook"
+                    }
+                ]
+            },
+            {
+                "phrase": "gotta drag the bag asap",
+                "predicted_intent": "hook",
+                "confidence": 0.8966160416603088,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "bag"
+                    }
+                ]
+            },
+            {
+                "phrase": "please hook the keys quietly",
+                "predicted_intent": "hook",
+                "confidence": 0.9406751394271851,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "keys"
+                    }
+                ]
+            },
+            {
+                "phrase": "wanna drag the item using the pole",
+                "predicted_intent": "hook",
+                "confidence": 0.9853437542915344,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "item"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "pole"
+                    }
+                ]
+            }
+        ]
+    },
+    "warm": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "quickly heat up myself with the heater",
+                "predicted_intent": "warm",
+                "confidence": 0.9890496730804443,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "heater"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly warm her carefully",
+                "predicted_intent": "warm",
+                "confidence": 0.9747440218925476,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "her"
+                    }
+                ]
+            },
+            {
+                "phrase": "i want to warm Zack quietly",
+                "predicted_intent": "warm",
+                "confidence": 0.996800422668457,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "Zack"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me warm Alex with the fire",
+                "predicted_intent": "warm",
+                "confidence": 0.9879544973373413,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "Alex"
+                    },
+                    {
+                        "entity": "tool",
+                        "value": "fire"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me warm her carefully",
+                "predicted_intent": "warm",
+                "confidence": 0.9936502575874329,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "her"
+                    }
+                ]
+            }
+        ]
+    },
+    "signal": {
+        "correct": 10,
+        "failed": 0,
+        "failed_phrases": [],
+        "samples": [
+            {
+                "phrase": "let me wave the flare to signal",
+                "predicted_intent": "signal",
+                "confidence": 0.9984334111213684,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "flare"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me call the radio to signal",
+                "predicted_intent": "signal",
+                "confidence": 0.9973158240318298,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "radio"
+                    }
+                ]
+            },
+            {
+                "phrase": "let me shoot the flare to signal",
+                "predicted_intent": "signal",
+                "confidence": 0.8991461992263794,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "flare"
+                    }
+                ]
+            },
+            {
+                "phrase": "slowly signal the flare to signal",
+                "predicted_intent": "signal",
+                "confidence": 0.9980008006095886,
+                "entities_extracted": [
+                    {
+                        "entity": "tool",
+                        "value": "flare"
+                    }
+                ]
+            },
+            {
+                "phrase": "signal the boat quietly",
+                "predicted_intent": "signal",
+                "confidence": 0.9943485856056213,
+                "entities_extracted": [
+                    {
+                        "entity": "target",
+                        "value": "boat"
+                    }
+                ]
+            }
+        ]
+    },
+    "OVERALL_SUMMARY": {
+        "total_tested": 210,
+        "total_correct": 188,
+        "accuracy_percentage": 89.52
+    }
+}
