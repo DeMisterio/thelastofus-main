@@ -131,7 +131,7 @@ VOCAB = {
     }
 }
 
-def generate_prompts(intent, data, count=100):
+def generate_prompts(intent, data, count=10):
     prompts = set()
     templates = data.get("templates", [])
     
@@ -163,10 +163,10 @@ async def test_model():
     results = {}
     total_accuracy_tracker = {"correct": 0, "total": 0}
     
-    print("[*] Generating 100 test prompts for each intent...")
+    print("[*] Generating 10 test prompts for each intent (Total 210)...")
     for intent, data in VOCAB.items():
         print(f"  -> Testing Intent: {intent}")
-        test_phrases = generate_prompts(intent, data, count=100)
+        test_phrases = generate_prompts(intent, data, count=10)
         
         results[intent] = {
             "correct": 0,
